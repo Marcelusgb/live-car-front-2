@@ -7,16 +7,18 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- estilo -->
+    <link rel="stylesheet" href="estilo.css">
 
     <title>Dashboard</title>
   </head>
   <body>
-    <h1>Dashboard</h1>
+    <h1 style="margin-bottom:50px;">Dashboard</h1>
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item nav-item-lado-esquerdo" role="presentation">
                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#painel" role="tab" aria-controls="painel" aria-selected="true">Painel</a>
                     </li>
                     <li class="nav-item" role="presentation">
@@ -25,237 +27,255 @@
                 </ul>
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="painel" role="tabpanel" aria-labelledby="painel-tab">
-                        <div class="row">
-                            <div class="col-9">
-                                <p>Seja bem-vindo ao painel do Live Ca Shopping</p>
-                            </div>
-                            <div class="col-3 d-flex">
-                                <p>EXPORTAR XLS</p>
-                                <P>EXPORTAR PDF</P>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="card">
-                                    <div class="card-header">
-                                      <p>Leads gerados</p>
-                                      <p>(Atendimento x Não atendidos)</p>
-                                      <h1>
-                                        grafico
-                                        </h1>
-                                    </div>
-                                    <div class="card-body">
-                                      <div class="d-flex">
-                                          <div class="d-flex">
-                                            <div>
-                                                <p>TOTAL</p>
-                                                <p>200</p>
-                                                <p>Leads</p>
-                                            </div>
-                                            <div>
-                                                <p>ATENDIDOS</p>
-                                                <p>120</p>
-                                                <p>Leads</p>
-                                            </div>
-                                            <div>
-                                                <p>NÃO ATENDIDOS</p>
-                                                <p>80</p>
-                                                <p>Leads</p>
-                                            </div>
-                                          </div>
-                                          <div>
-                                            <a href="">MAIS DETALHES</a>
-                                            <p>Compare os leads</p>
-                                          </div>
-                                      </div>
-                                    </div>
+                        <div class="container">
+                            <div class="row row-seja-ben-vindo">
+                                <div class="col-9">
+                                    <p class="p-seja-bem-vindo">Seja bem-vindo ao painel do Live Ca Shopping</p>
                                 </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <div>
-                                            <p>Duração das chamadas</p>
-                                            <p>(Minutagem)</p>
-                                        </div>
-                                        <div class="d-flex">
-                                            <div>
-                                                <p>TOTAL</p>
-                                                <p>6.220</p>
-                                                <p>Minutos</p>
-                                            </div>
-                                            <div>
-                                                <p>HOJE</p>
-                                                <p>2</p>
-                                                <p>Minutos</p>
-                                            </div>
-                                            <div>
-                                                <p>ÚLTIMOS 7 DIAS</p>
-                                                <p>60</p>
-                                                <p>Minutos</p>
-                                            </div>
-                                            <div>
-                                                <p>ÚLTIMOS 30 DIAS</p>
-                                                <p>60</p>
-                                                <p>Minutos</p>
-                                                <p>Mês passado: 72</p>
-                                            </div>
-                                        </div>
+                                <div class="col-3 d-flex">
+                                    <div>
+                                        <a href="" class="btn-seja-bem-vindo-exportar">EXPORTAR XLS</a>
+                                        
                                     </div>
-                                    <div class="card-body">
-                                        <p>Chamadas acima de 10 minutos:</p>
-                                        <div>
-                                            <div class="d-flex">
-                                                <span></span>
-                                                <p>Nome da           Sala</p>
-                                                <p>00:12:00</p>
-                                                <p>Alexandre Magalhães</p>
-                                                <p>(3)</p>
-                                                <a href="">ENTRAR NA SALA</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <a href="">VEJA TODAS</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="card">
-                                    <div class="card-header">
-                                      <div>
-                                          <p>Tempo médio de atendimento</p>
-                                      </div>
-                                      <div>
-                                        <h1>
-                                            grafico
-                                        </h1>
-                                    </div>
+                                    <div>
+                                        <a href="" class="btn-seja-bem-vindo-exportar">EXPORTAR PDF</a>
+                                        
                                     </div>
                                     
-                                    <div class="card-body">
-                                        <div class="d-flex">
-                                            <div class="d-flex">
-                                              <div>
-                                                  <p>TEMPO TOTAL</p>
-                                                  <p>200</p>
-                                                  <p>minutos</p>
-                                              </div>
-                                              <div>
-                                                  <p>ATENDIDOS</p>
-                                                  <p>120</p>
-                                                  <p>Leads</p>
-                                              </div>
-                                            </div>
-                                            <div>
-                                              <a href="">MAIS DETALHES</a>
-                                              <p>Compare os leads das unidades</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <div>
-                                            <p>Tempo médio de espera</p>
-                                        </div>
-                                        <div>
-                                            <h1>
-                                                grafico
-                                            </h1> 
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="d-flex">
-                                            <div class="d-flex">
-                                              <div>
-                                                  <p>TEMPO TOTAL</p>
-                                                  <p>200</p>
-                                                  <p>minutos</p>
-                                              </div>
-                                              <div>
-                                                  <p>ATENDIDOS</p>
-                                                  <p>120</p>
-                                                  <p>Leads</p>
-                                              </div>
-                                            </div>
-                                            <div>
-                                              <a href="">MAIS DETALHES</a>
-                                              <p>Compare os leads das unidades</p>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <p>Leads gerados</p>
-                                        <p>(Atendidos x Não atendidos)</p>
-                                        <div>
-                                            <h1>Grafico</h1>
+                            <div style="background: #4E6C86 0% 0% no-repeat padding-box;height: 50px;">
+
+                            </div>
+                            <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="card">
+                                        <div class="card-header">
+                                          <p>Leads gerados</p>
+                                          <p>(Atendimento x Não atendidos)</p>
+                                          <h1>
+                                            grafico
+                                            </h1>
                                         </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="d-flex">
-                                            <div class="d-flex">
+                                        <div class="card-body">
+                                          <div class="d-flex">
+                                              <div class="d-flex">
                                                 <div>
                                                     <p>TOTAL</p>
                                                     <p>200</p>
                                                     <p>Leads</p>
                                                 </div>
                                                 <div>
-                                                    <p>Atendidos na data</p>
-                                                    <p>Não Atendidos da data</p>
+                                                    <p>ATENDIDOS</p>
+                                                    <p>120</p>
+                                                    <p>Leads</p>
                                                 </div>
                                                 <div>
+                                                    <p>NÃO ATENDIDOS</p>
                                                     <p>80</p>
-                                                    <p>120</p>
+                                                    <p>Leads</p>
+                                                </div>
+                                              </div>
+                                              <div>
+                                                  <!-- botão para o modal -->
+                                                <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                                                    MAIS DETALHES
+                                                  </button> 
+                                                  <!-- botão para o modal -->
+                                                <p>Compare os leads</p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div>
+                                                <p>Duração das chamadas</p>
+                                                <p>(Minutagem)</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div>
+                                                    <p>TOTAL</p>
+                                                    <p>6.220</p>
+                                                    <p>Minutos</p>
+                                                </div>
+                                                <div>
+                                                    <p>HOJE</p>
+                                                    <p>2</p>
+                                                    <p>Minutos</p>
+                                                </div>
+                                                <div>
+                                                    <p>ÚLTIMOS 7 DIAS</p>
+                                                    <p>60</p>
+                                                    <p>Minutos</p>
+                                                </div>
+                                                <div>
+                                                    <p>ÚLTIMOS 30 DIAS</p>
+                                                    <p>60</p>
+                                                    <p>Minutos</p>
+                                                    <p>Mês passado: 72</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Chamadas acima de 10 minutos:</p>
+                                            <div>
+                                                <div class="d-flex">
+                                                    <span></span>
+                                                    <p>Nome da           Sala</p>
+                                                    <p>00:12:00</p>
+                                                    <p>Alexandre Magalhães</p>
+                                                    <p>(3)</p>
+                                                    <a href="">ENTRAR NA SALA</a>
                                                 </div>
                                             </div>
                                             <div>
-                                              <a href="">MAIS DETALHES</a>
-                                              <p>Compare os leads das unidades</p>
+                                                <a href="">VEJA TODAS</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <p>Leads online</p>
-                                        <p>(Atendidos x Não atendidos)</p>
-                                        <div>
-                                            <h1>Grafico</h1>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="card">
+                                        <div class="card-header">
+                                          <div>
+                                              <p>Tempo médio de atendimento</p>
+                                          </div>
+                                          <div>
+                                            <h1>
+                                                grafico
+                                            </h1>
                                         </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="d-flex">
+                                        </div>
+                                        
+                                        <div class="card-body">
                                             <div class="d-flex">
-                                                <div>
-                                                    <p>TOTAL</p>
-                                                    <p>200</p>
-                                                    <p>Leads</p>
+                                                <div class="d-flex">
+                                                  <div>
+                                                      <p>TEMPO TOTAL</p>
+                                                      <p>200</p>
+                                                      <p>minutos</p>
+                                                  </div>
+                                                  <div>
+                                                      <p>ATENDIDOS</p>
+                                                      <p>120</p>
+                                                      <p>Leads</p>
+                                                  </div>
                                                 </div>
                                                 <div>
-                                                    <p>Atendidos na data</p>
-                                                    <p>Não Atendidos da data</p>
-                                                </div>
-                                                <div>
-                                                    <p>80</p>
-                                                    <p>120</p>
+                                                  <a href="">MAIS DETALHES</a>
+                                                  <p>Compare os leads das unidades</p>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card">
+                                        <div class="card-header">
                                             <div>
-                                              <a href="">MAIS DETALHES</a>
-                                              <p>Compare os leads das unidades</p>
+                                                <p>Tempo médio de espera</p>
+                                            </div>
+                                            <div>
+                                                <h1>
+                                                    grafico
+                                                </h1> 
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <div class="d-flex">
+                                                  <div>
+                                                      <p>TEMPO TOTAL</p>
+                                                      <p>200</p>
+                                                      <p>minutos</p>
+                                                  </div>
+                                                  <div>
+                                                      <p>ATENDIDOS</p>
+                                                      <p>120</p>
+                                                      <p>Leads</p>
+                                                  </div>
+                                                </div>
+                                                <div>
+                                                  <a href="">MAIS DETALHES</a>
+                                                  <p>Compare os leads das unidades</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <p>Leads gerados</p>
+                                            <p>(Atendidos x Não atendidos)</p>
+                                            <div>
+                                                <h1>Grafico</h1>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <p>TOTAL</p>
+                                                        <p>200</p>
+                                                        <p>Leads</p>
+                                                    </div>
+                                                    <div>
+                                                        <p>Atendidos na data</p>
+                                                        <p>Não Atendidos da data</p>
+                                                    </div>
+                                                    <div>
+                                                        <p>80</p>
+                                                        <p>120</p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                  <a href="">MAIS DETALHES</a>
+                                                  <p>Compare os leads das unidades</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <p>Leads online</p>
+                                            <p>(Atendidos x Não atendidos)</p>
+                                            <div>
+                                                <h1>Grafico</h1>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <p>TOTAL</p>
+                                                        <p>200</p>
+                                                        <p>Leads</p>
+                                                    </div>
+                                                    <div>
+                                                        <p>Atendidos na data</p>
+                                                        <p>Não Atendidos da data</p>
+                                                    </div>
+                                                    <div>
+                                                        <p>80</p>
+                                                        <p>120</p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                  <a href="">MAIS DETALHES</a>
+                                                  <p>Compare os leads das unidades</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -264,12 +284,62 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="salas" role="tabpanel" aria-labelledby="salas-tab">
-                        
+                        <div class="row">
+                            <div class="col-12 d-flex">
+                                <p>Em atendimento</p>
+                                <p>Em espera</p>
+                                <p>Sem usuários</p>
+                            </div>
+                            <div class="col-2">
+                                <p>Nome da Sala</p>
+                            </div>
+                            <div class="col-2">
+                                <p>Alexandre Magalhães</p>
+                            </div>
+                            <div class="col-2">
+                                <p>(31)9999-9999</p>
+                            </div>
+                            <div class="col-2">
+                                <p>Nissan Kicks SL</p>
+                            </div>
+                            <div class="col-1">
+                                <p>00:12:00</p>
+                            </div>
+                            <div class="col-1">
+                                <p>(3)</p>
+                            </div>
+                            <div class="col-2">
+                                <a href="">ENTRAR NA SALA</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal -->
     
 
     
