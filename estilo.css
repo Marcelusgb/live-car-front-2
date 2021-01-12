@@ -12,8 +12,8 @@
     --unnamed-color-8e9198: #8E9198;
     --unnamed-color-5d5e61: #5D5E61;
     --unnamed-color-2a3e51: #2A3E51;
-    ---f8f9fd-bg-: #F8F9FD;
-    ---22bdee-realce-: #22BDEE;
+    /* ---f8f9fd-bg-: #F8F9FD;
+    ---22bdee-realce-: #22BDEE; */
     --unnamed-color-000000: #000000;
     --unnamed-color-e2e2e2: #E2E2E2;
     }
@@ -183,6 +183,9 @@ body{
         background: #22BDEE 0% 0% no-repeat padding-box;
         border-radius: 4px;
         font-size: 12px;
+        color: white;
+    }
+    .btn-mais-detalhes:hover{
         color: white;
     }
     .compare-os-leads-p{

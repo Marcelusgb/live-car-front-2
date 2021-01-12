@@ -16,475 +16,460 @@
     <h1 style="margin-bottom:50px;">Dashboard</h1>
 
     
-    <!-- Divs teste chart -->
-    <div id="chart_div"></div>
-    <div id="chart_div2"></div>
-    <!-- Fim div teste chart -->
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item nav-item-lado-esquerdo" role="presentation">
-                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#painel" role="tab" aria-controls="painel" aria-selected="true">Painel</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#salas" role="tab" aria-controls="salas" aria-selected="false">Salas</a>
-                    </li>
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="painel" role="tabpanel" aria-labelledby="painel-tab">
-                        <div class="container">
-                            <div class="row row-seja-ben-vindo">
-                                <div class="col-9">
-                                    <p class="p-seja-bem-vindo">Seja bem-vindo ao painel do Live Ca Shopping</p>
-                                </div>
-                                <div class="col-3 d-flex">
-                                    <div>
-                                        <a href="" class="btn-seja-bem-vindo-exportar">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" class="svg-exportar"><path class="exportar-xls"  d="M7,4.25V0H.75A.748.748,0,0,0,0,.75v14.5A.748.748,0,0,0,.75,16h10.5a.748.748,0,0,0,.75-.75V5H7.75A.752.752,0,0,1,7,4.25ZM4,8.75A.25.25,0,0,1,3.75,9H3.5a.5.5,0,0,0-.5.5v1a.5.5,0,0,0,.5.5h.25a.25.25,0,0,1,.25.25v.5a.25.25,0,0,1-.25.25H3.5A1.5,1.5,0,0,1,2,10.5v-1A1.5,1.5,0,0,1,3.5,8h.25A.25.25,0,0,1,4,8.25ZM5.383,12H5a.25.25,0,0,1-.25-.25v-.5A.25.25,0,0,1,5,11h.383c.186,0,.325-.109.325-.207a.165.165,0,0,0-.066-.12l-.684-.587a1.16,1.16,0,0,1-.417-.879A1.272,1.272,0,0,1,5.867,8H6.25a.25.25,0,0,1,.25.25v.5A.25.25,0,0,1,6.25,9H5.867c-.186,0-.325.109-.325.207a.165.165,0,0,0,.066.12l.684.587a1.16,1.16,0,0,1,.417.879A1.271,1.271,0,0,1,5.383,12ZM8,8.25V8.9a3.406,3.406,0,0,0,.5,1.778A3.406,3.406,0,0,0,9,8.9V8.25A.25.25,0,0,1,9.25,8h.5a.25.25,0,0,1,.25.25V8.9a4.3,4.3,0,0,1-1.134,2.94.5.5,0,0,1-.733,0A4.3,4.3,0,0,1,7,8.9V8.25A.25.25,0,0,1,7.25,8h.5A.25.25,0,0,1,8,8.25Zm3.781-4.969L8.722.219A.749.749,0,0,0,8.191,0H8V4h4V3.809A.748.748,0,0,0,11.781,3.281Z"/></svg>
-                                            EXPORTAR XLS
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="" class="btn-seja-bem-vindo-exportar">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" class="svg-exportar"><path class="exportar-xls" d="M5.684,8a3.015,3.015,0,0,1-.062-1.466C5.884,6.538,5.859,7.691,5.684,8ZM5.631,9.478a14.42,14.42,0,0,1-.887,1.959,11.507,11.507,0,0,1,1.966-.684A4.048,4.048,0,0,1,5.631,9.478Zm-2.941,3.9c0,.025.412-.169,1.091-1.256A4.319,4.319,0,0,0,2.691,13.378ZM7.75,5H12V15.25a.748.748,0,0,1-.75.75H.75A.748.748,0,0,1,0,15.25V.75A.748.748,0,0,1,.75,0H7V4.25A.752.752,0,0,0,7.75,5ZM7.5,10.369A3.136,3.136,0,0,1,6.166,8.688a4.492,4.492,0,0,0,.194-2.006.783.783,0,0,0-1.494-.213,5.2,5.2,0,0,0,.253,2.406,29.345,29.345,0,0,1-1.275,2.681s0,0-.006,0c-.847.434-2.3,1.391-1.7,2.125A.971.971,0,0,0,2.806,14c.559,0,1.116-.562,1.909-1.931a17.813,17.813,0,0,1,2.469-.725,4.736,4.736,0,0,0,2,.609A.809.809,0,0,0,9.8,10.594C9.366,10.169,8.1,10.291,7.5,10.369Zm4.281-7.087L8.719.219A.749.749,0,0,0,8.188,0H8V4h4V3.809A.748.748,0,0,0,11.781,3.281ZM9.466,11.259c.128-.084-.078-.372-1.337-.281C9.288,11.472,9.466,11.259,9.466,11.259Z"/></svg>
-                                            EXPORTAR PDF
-                                        </a>
-                                        
-                                    </div>
-                                    
-                                </div>
-                            </div>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item nav-item-lado-esquerdo" role="presentation">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#painel" role="tab" aria-controls="painel" aria-selected="true">Painel</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#salas" role="tab" aria-controls="salas" aria-selected="false">Salas</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="painel" role="tabpanel" aria-labelledby="painel-tab">
+            <div class="container">
+                <div class="row row-seja-ben-vindo">
+                    <div class="col-9">
+                        <p class="p-seja-bem-vindo">Seja bem-vindo ao painel do Live Ca Shopping</p>
+                    </div>
+                    <div class="col-3 d-flex">
+                        <div>
+                            <a href="" class="btn-seja-bem-vindo-exportar">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" class="svg-exportar"><path class="exportar-xls"  d="M7,4.25V0H.75A.748.748,0,0,0,0,.75v14.5A.748.748,0,0,0,.75,16h10.5a.748.748,0,0,0,.75-.75V5H7.75A.752.752,0,0,1,7,4.25ZM4,8.75A.25.25,0,0,1,3.75,9H3.5a.5.5,0,0,0-.5.5v1a.5.5,0,0,0,.5.5h.25a.25.25,0,0,1,.25.25v.5a.25.25,0,0,1-.25.25H3.5A1.5,1.5,0,0,1,2,10.5v-1A1.5,1.5,0,0,1,3.5,8h.25A.25.25,0,0,1,4,8.25ZM5.383,12H5a.25.25,0,0,1-.25-.25v-.5A.25.25,0,0,1,5,11h.383c.186,0,.325-.109.325-.207a.165.165,0,0,0-.066-.12l-.684-.587a1.16,1.16,0,0,1-.417-.879A1.272,1.272,0,0,1,5.867,8H6.25a.25.25,0,0,1,.25.25v.5A.25.25,0,0,1,6.25,9H5.867c-.186,0-.325.109-.325.207a.165.165,0,0,0,.066.12l.684.587a1.16,1.16,0,0,1,.417.879A1.271,1.271,0,0,1,5.383,12ZM8,8.25V8.9a3.406,3.406,0,0,0,.5,1.778A3.406,3.406,0,0,0,9,8.9V8.25A.25.25,0,0,1,9.25,8h.5a.25.25,0,0,1,.25.25V8.9a4.3,4.3,0,0,1-1.134,2.94.5.5,0,0,1-.733,0A4.3,4.3,0,0,1,7,8.9V8.25A.25.25,0,0,1,7.25,8h.5A.25.25,0,0,1,8,8.25Zm3.781-4.969L8.722.219A.749.749,0,0,0,8.191,0H8V4h4V3.809A.748.748,0,0,0,11.781,3.281Z"/></svg>
+                                EXPORTAR XLS
+                            </a>
                         </div>
-                            <div style="background: #4E6C86 0% 0% no-repeat padding-box;height: 50px;">
+                        <div>
+                            <a href="" class="btn-seja-bem-vindo-exportar">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" class="svg-exportar"><path class="exportar-xls" d="M5.684,8a3.015,3.015,0,0,1-.062-1.466C5.884,6.538,5.859,7.691,5.684,8ZM5.631,9.478a14.42,14.42,0,0,1-.887,1.959,11.507,11.507,0,0,1,1.966-.684A4.048,4.048,0,0,1,5.631,9.478Zm-2.941,3.9c0,.025.412-.169,1.091-1.256A4.319,4.319,0,0,0,2.691,13.378ZM7.75,5H12V15.25a.748.748,0,0,1-.75.75H.75A.748.748,0,0,1,0,15.25V.75A.748.748,0,0,1,.75,0H7V4.25A.752.752,0,0,0,7.75,5ZM7.5,10.369A3.136,3.136,0,0,1,6.166,8.688a4.492,4.492,0,0,0,.194-2.006.783.783,0,0,0-1.494-.213,5.2,5.2,0,0,0,.253,2.406,29.345,29.345,0,0,1-1.275,2.681s0,0-.006,0c-.847.434-2.3,1.391-1.7,2.125A.971.971,0,0,0,2.806,14c.559,0,1.116-.562,1.909-1.931a17.813,17.813,0,0,1,2.469-.725,4.736,4.736,0,0,0,2,.609A.809.809,0,0,0,9.8,10.594C9.366,10.169,8.1,10.291,7.5,10.369Zm4.281-7.087L8.719.219A.749.749,0,0,0,8.188,0H8V4h4V3.809A.748.748,0,0,0,11.781,3.281ZM9.466,11.259c.128-.084-.078-.372-1.337-.281C9.288,11.472,9.466,11.259,9.466,11.259Z"/></svg>
+                                EXPORTAR PDF
+                            </a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+                <div style="background: #4E6C86 0% 0% no-repeat padding-box;height: 50px;">
 
+                </div>
+            <div class="container-cards">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="d-flex">
+                                    <p class="titulo-card">Leads gerados</p>
+                                    <a href="#" data-toggle="tooltip" title="Some tooltip text!">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"><path class="icon-tooltip" d="M14.5,8A6.5,6.5,0,1,0,21,14.5,6.5,6.5,0,0,0,14.5,8Zm0,2.883a1.1,1.1,0,1,1-1.1,1.1A1.1,1.1,0,0,1,14.5,10.883Zm1.468,6.657a.315.315,0,0,1-.315.315H13.347a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h.315V14.919h-.315a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h1.677a.315.315,0,0,1,.315.315V16.6h.315a.315.315,0,0,1,.315.315Z" transform="translate(-8 -8)"/></svg>
+                                    </a>
+                                </div>
+                                <p class="subtitulo-card">(Atendimento x Não atendidos)</p>
+                                <div class="col-12 text-center" id="leadgerados">
+                                </div>
+                                
                             </div>
-                        <div class="container-cards">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <div class="d-flex">
-                                                <p class="titulo-card">Leads gerados</p>
-                                                <a href="#" data-toggle="tooltip" title="Some tooltip text!">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"><path class="icon-tooltip" d="M14.5,8A6.5,6.5,0,1,0,21,14.5,6.5,6.5,0,0,0,14.5,8Zm0,2.883a1.1,1.1,0,1,1-1.1,1.1A1.1,1.1,0,0,1,14.5,10.883Zm1.468,6.657a.315.315,0,0,1-.315.315H13.347a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h.315V14.919h-.315a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h1.677a.315.315,0,0,1,.315.315V16.6h.315a.315.315,0,0,1,.315.315Z" transform="translate(-8 -8)"/></svg>
-                                                </a>
-                                            </div>
-                                            <p class="subtitulo-card">(Atendimento x Não atendidos)</p>
-                                          <h1>
-                                            grafico
-                                            </h1>
-                                        </div>
-                                        <div class="card-body">
-                                          <div class="d-flex">
-                                              <div class="col-8 d-flex col-info-cards">
-                                                <div class="info-card-p">
-                                                    <p class="p-tatal">TOTAL</p>
-                                                    <p class="p-numer-cards">200</p>
-                                                    <p class="p-leads-cards">Leads</p>
-                                                </div>
-                                                <div class="info-card-p">
-                                                    <p class="p-tatal">ATENDIDOS</p>
-                                                    <p class="p-numer-cards">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path class="atendido-svg" d="M11.5,8A11.5,11.5,0,1,0,23,19.5,11.5,11.5,0,0,0,11.5,8Zm0,20.774A9.274,9.274,0,1,1,20.774,19.5,9.284,9.284,0,0,1,11.5,28.774Zm3.9-6.65a5.066,5.066,0,0,1-7.79,0,1.113,1.113,0,0,0-1.711,1.424,7.3,7.3,0,0,0,11.213,0A1.113,1.113,0,0,0,15.4,22.125ZM6.33,17.413a1.735,1.735,0,0,1,1.461-1,1.735,1.735,0,0,1,1.461,1l.441.788a.367.367,0,0,0,.431.172.372.372,0,0,0,.264-.385c-.153-1.952-1.493-3.311-2.6-3.311s-2.444,1.359-2.6,3.311a.375.375,0,0,0,.264.385.38.38,0,0,0,.431-.172Zm8.88-2.736c-1.1,0-2.444,1.359-2.6,3.311a.373.373,0,0,0,.7.213l.441-.788a1.735,1.735,0,0,1,1.461-1,1.735,1.735,0,0,1,1.461,1l.441.788a.367.367,0,0,0,.431.172.372.372,0,0,0,.264-.385C17.653,16.036,16.313,14.677,15.21,14.677Z" transform="translate(0 -8)"/></svg>
-                                                        120
-                                                    </p>
-                                                    <p class="p-leads-cards">Leads</p>
-                                                </div>
-                                                <div class="info-card-p">
-                                                    <p class="p-tatal">NÃO ATENDIDOS</p>
-                                                    <p class="p-numer-cards">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path class="nao-atendido-svg" d="M11.5,8A11.5,11.5,0,1,0,23,19.5,11.5,11.5,0,0,0,11.5,8Zm0,20.774A9.274,9.274,0,1,1,20.774,19.5,9.284,9.284,0,0,1,11.5,28.774ZM7.79,18.758a1.484,1.484,0,1,0-1.484-1.484A1.482,1.482,0,0,0,7.79,18.758ZM15.21,15.79a1.484,1.484,0,1,0,1.484,1.484A1.482,1.482,0,0,0,15.21,15.79ZM11.5,21.726a6.253,6.253,0,0,0-4.813,2.254A1.113,1.113,0,0,0,8.4,25.4a4.033,4.033,0,0,1,6.2,0,1.113,1.113,0,0,0,1.711-1.424A6.253,6.253,0,0,0,11.5,21.726Z" transform="translate(0 -8)"/></svg>
-                                                        80
-                                                    </p>
-                                                    <p class="p-leads-cards">Leads</p>
-                                                </div>
-                                              </div>
-                                              <div class="col-4 col-info-cards">
-                                                  <!-- botão para o modal -->
-                                                <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
-                                                    MAIS DETALHES
-                                                  </button> 
-                                                  <!-- botão para o modal -->
-                                                <p class="compare-os-leads-p">Compare os leads</p>
-                                              </div>
-                                          </div>
-                                        </div>
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="col-8 d-flex col-info-cards">
+                                    <div class="info-card-p">
+                                        <p class="p-tatal">TOTAL</p>
+                                        <p class="p-numer-cards">200</p>
+                                        <p class="p-leads-cards">Leads</p>
                                     </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <div>
-                                                <div class="d-flex">
-                                                    <p class="titulo-card">Duração das chamadas</p>
-                                                    <a href="#" data-toggle="tooltip" title="Some tooltip text!">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"><path class="icon-tooltip" d="M14.5,8A6.5,6.5,0,1,0,21,14.5,6.5,6.5,0,0,0,14.5,8Zm0,2.883a1.1,1.1,0,1,1-1.1,1.1A1.1,1.1,0,0,1,14.5,10.883Zm1.468,6.657a.315.315,0,0,1-.315.315H13.347a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h.315V14.919h-.315a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h1.677a.315.315,0,0,1,.315.315V16.6h.315a.315.315,0,0,1,.315.315Z" transform="translate(-8 -8)"/></svg>
-                                                    </a>
-                                                </div>
-
-                                                <p class="subtitulo-card">(Minutagem)</p>
-                                            </div>
-                                            <div class="row d-flex">
-                                                <div class="col-2 ">
-                                                    <p class="p-tatal">TOTAL</p>
-                                                    <p class="p-numer-cards">6.220</p>
-                                                    <p class="p-leads-cards">Minutos</p>
-                                                </div>
-                                                <div class="col-2 ">
-                                                    <p class="p-tatal">HOJE</p>
-                                                    <p class="p-numer-cards">2</p>
-                                                    <p class="p-leads-cards">Minutos</p>
-                                                </div>
-                                                <div class="col-3 col-info-cards">
-                                                    <p class="p-tatal">ÚLTIMOS 7 DIAS</p>
-                                                    <p class="p-numer-cards">60</p>
-                                                    <p class="p-leads-cards">Minutos</p>
-                                                </div>
-                                                <div class="col-4 ">
-                                                    <p class="p-tatal">ÚLTIMOS 30 DIAS</p>
-                                                    <p class="p-numer-cards-duracao">60</p>
-                                                    <p class="p-leads-cards">Minutos</p>
-                                                    <p class="p-leads-cards">Mês passado: 72</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-body body-chamada-10-min">
-                                            <p class="titulo-card-2">Chamadas acima de 10 minutos:</p>
-                                            <div class="col-12 d-flex align-items-baseline card-chamadas-10-min">
-                                                <div class="col-1 col-chamada">
-                                                    <a href="" class="chamada-em-andamento">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path class="chamada-em-andamento-svg" d="M16.5,8A8.5,8.5,0,1,0,25,16.5,8.5,8.5,0,0,0,16.5,8Zm3.966,9.323-6.032,3.462a.824.824,0,0,1-1.224-.72V12.935a.825.825,0,0,1,1.224-.72l6.032,3.667A.825.825,0,0,1,20.466,17.323Z" transform="translate(-8 -8)"/></svg>
-                                                    </a>
-                                                </div>
-                                                <div class="col-2 col-info-cards">
-                                                    <p class="p-nome-da-sala">Nome da Sala</p>
-                                                </div>
-                                                <div class="col-2 col-info-cards">
-                                                    <p class="p-duracao-chamada">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 23 23"><path class="relogio-azul-svg" d="M19.5,8A11.5,11.5,0,1,0,31,19.5,11.5,11.5,0,0,0,19.5,8Zm0,20.774A9.274,9.274,0,1,1,28.774,19.5,9.272,9.272,0,0,1,19.5,28.774Zm2.866-4.841-3.937-2.861a.56.56,0,0,1-.227-.45V13.008a.558.558,0,0,1,.556-.556h1.484a.558.558,0,0,1,.556.556v6.571l3.1,2.254a.556.556,0,0,1,.121.779l-.872,1.2A.56.56,0,0,1,22.366,23.933Z" transform="translate(-8 -8)"/></svg>
-                                                        00:12:00
-                                                    </p>
-                                                </div>
-                                                <div class="col-3 col-info-cards">
-                                                    <p class="p-nome-pessoa-chamada">Alexandre Magalhães</p>
-                                                </div>
-                                                <div class="col-1 col-info-cards">
-                                                    <p class="p-numero-pesssoas-chamda">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24.286 17"><path class="pessoas-ativas-svg" d="M3.643,39.286a2.429,2.429,0,1,0-2.429-2.429A2.431,2.431,0,0,0,3.643,39.286Zm17,0a2.429,2.429,0,1,0-2.429-2.429A2.431,2.431,0,0,0,20.643,39.286ZM21.857,40.5H19.429a2.421,2.421,0,0,0-1.711.706,5.551,5.551,0,0,1,2.85,4.151h2.5a1.213,1.213,0,0,0,1.214-1.214V42.929A2.431,2.431,0,0,0,21.857,40.5Zm-9.714,0a4.25,4.25,0,1,0-4.25-4.25A4.248,4.248,0,0,0,12.143,40.5Zm2.914,1.214h-.315a5.868,5.868,0,0,1-5.2,0H9.229a4.373,4.373,0,0,0-4.371,4.371v1.093A1.822,1.822,0,0,0,6.679,49H17.607a1.822,1.822,0,0,0,1.821-1.821V46.086A4.373,4.373,0,0,0,15.057,41.714Zm-8.489-.508A2.421,2.421,0,0,0,4.857,40.5H2.429A2.431,2.431,0,0,0,0,42.929v1.214a1.213,1.213,0,0,0,1.214,1.214h2.5a5.565,5.565,0,0,1,2.854-4.151Z" transform="translate(0 -32)"/></svg>
-                                                        (3)
-                                                    </p>
-                                                </div>
-                                                <div class="col-3 col-info-cards">
-                                                    <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="14" viewBox="0 0 17.5 14"><path class="entrar-na-sala-svg" d="M17.063,12.251H14.875V3.1a1.334,1.334,0,0,0-1.313-1.352H10.5V3.5h2.625V14h3.938a.437.437,0,0,0,.438-.438v-.875A.437.437,0,0,0,17.063,12.251ZM8.538.029l-5.25,1.36a.9.9,0,0,0-.663.88v9.983H.438A.437.437,0,0,0,0,12.688v.875A.437.437,0,0,0,.438,14H9.625V.908A.882.882,0,0,0,8.538.029ZM7.219,7.876c-.362,0-.656-.392-.656-.875s.294-.875.656-.875.656.392.656.875S7.581,7.876,7.219,7.876Z" transform="translate(0 -0.001)"/></svg>
-                                                        ENTRAR NA SALA
-                                                      </button>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 d-flex align-items-baseline card-chamadas-10-min">
-                                                <div class="col-1 col-chamada">
-                                                    <a href="" class="chamada-em-espera">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12.75" height="17" viewBox="0 0 12.75 17"><path class="chamada-em-espera-svg" d="M11.953,0H.8A.8.8,0,0,0,0,.8v.531a.8.8,0,0,0,.8.8A6.589,6.589,0,0,0,4.809,8.5,6.589,6.589,0,0,0,.8,14.875a.8.8,0,0,0-.8.8V16.2a.8.8,0,0,0,.8.8H11.953a.8.8,0,0,0,.8-.8v-.531a.8.8,0,0,0-.8-.8A6.589,6.589,0,0,0,7.941,8.5a6.589,6.589,0,0,0,4.012-6.375.8.8,0,0,0,.8-.8V.8A.8.8,0,0,0,11.953,0ZM9.828,14.875H2.922c0-2.572,1.534-4.781,3.453-4.781S9.828,12.3,9.828,14.875Z"/></svg>
-                                                    </a>
-                                                </div>
-                                                <div class="col-2 col-info-cards">
-                                                    <p class="p-nome-da-sala">Nome da Sala</p>
-                                                </div>
-                                                <div class="col-2 col-info-cards">
-                                                    <p class="p-duracao-chamada">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 23 23"><path class="relogio-azul-svg" d="M19.5,8A11.5,11.5,0,1,0,31,19.5,11.5,11.5,0,0,0,19.5,8Zm0,20.774A9.274,9.274,0,1,1,28.774,19.5,9.272,9.272,0,0,1,19.5,28.774Zm2.866-4.841-3.937-2.861a.56.56,0,0,1-.227-.45V13.008a.558.558,0,0,1,.556-.556h1.484a.558.558,0,0,1,.556.556v6.571l3.1,2.254a.556.556,0,0,1,.121.779l-.872,1.2A.56.56,0,0,1,22.366,23.933Z" transform="translate(-8 -8)"/></svg>
-                                                        00:12:00
-                                                    </p>
-                                                </div>
-                                                <div class="col-3 col-info-cards">
-                                                    <p class="p-nome-pessoa-chamada">Alexandre Magalhães</p>
-                                                </div>
-                                                <div class="col-1 col-info-cards">
-                                                    <p class="p-numero-pessoas-em-espera">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24.286 17"><path class="pessoas-em-espera-svg" d="M3.643,39.286a2.429,2.429,0,1,0-2.429-2.429A2.431,2.431,0,0,0,3.643,39.286Zm17,0a2.429,2.429,0,1,0-2.429-2.429A2.431,2.431,0,0,0,20.643,39.286ZM21.857,40.5H19.429a2.421,2.421,0,0,0-1.711.706,5.551,5.551,0,0,1,2.85,4.151h2.5a1.213,1.213,0,0,0,1.214-1.214V42.929A2.431,2.431,0,0,0,21.857,40.5Zm-9.714,0a4.25,4.25,0,1,0-4.25-4.25A4.248,4.248,0,0,0,12.143,40.5Zm2.914,1.214h-.315a5.868,5.868,0,0,1-5.2,0H9.229a4.373,4.373,0,0,0-4.371,4.371v1.093A1.822,1.822,0,0,0,6.679,49H17.607a1.822,1.822,0,0,0,1.821-1.821V46.086A4.373,4.373,0,0,0,15.057,41.714Zm-8.489-.508A2.421,2.421,0,0,0,4.857,40.5H2.429A2.431,2.431,0,0,0,0,42.929v1.214a1.213,1.213,0,0,0,1.214,1.214h2.5a5.565,5.565,0,0,1,2.854-4.151Z" transform="translate(0 -32)"/></svg>
-                                                        (3)
-                                                    </p>
-                                                </div>
-                                                <div class="col-3 col-info-cards">
-                                                    <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="14" viewBox="0 0 17.5 14"><path class="entrar-na-sala-svg" d="M17.063,12.251H14.875V3.1a1.334,1.334,0,0,0-1.313-1.352H10.5V3.5h2.625V14h3.938a.437.437,0,0,0,.438-.438v-.875A.437.437,0,0,0,17.063,12.251ZM8.538.029l-5.25,1.36a.9.9,0,0,0-.663.88v9.983H.438A.437.437,0,0,0,0,12.688v.875A.437.437,0,0,0,.438,14H9.625V.908A.882.882,0,0,0,8.538.029ZM7.219,7.876c-.362,0-.656-.392-.656-.875s.294-.875.656-.875.656.392.656.875S7.581,7.876,7.219,7.876Z" transform="translate(0 -0.001)"/></svg>
-                                                        ENTRAR NA SALA
-                                                      </button>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 d-flex align-items-baseline card-chamadas-10-min">
-                                                <div class="col-1 col-chamada">
-                                                    <a href="" class="ninguem-na-sala">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path class="ninguem-na-sala-stop-svg" d="M16.5,8A8.5,8.5,0,1,0,25,16.5,8.5,8.5,0,0,0,16.5,8Zm3.29,11.242a.55.55,0,0,1-.548.548H13.758a.55.55,0,0,1-.548-.548V13.758a.55.55,0,0,1,.548-.548h5.484a.55.55,0,0,1,.548.548Z" transform="translate(-8 -8)"/></svg></svg>
-                                                    </a>
-                                                </div>
-                                                <div class="col-2 col-info-cards">
-                                                    <p class="p-nome-da-sala">Nome da Sala</p>
-                                                </div>
-                                                <div class="col-2 col-info-cards">
-                                                    <p class="p-duracao-chamada">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 23 23"><path class="relogio-azul-svg" d="M19.5,8A11.5,11.5,0,1,0,31,19.5,11.5,11.5,0,0,0,19.5,8Zm0,20.774A9.274,9.274,0,1,1,28.774,19.5,9.272,9.272,0,0,1,19.5,28.774Zm2.866-4.841-3.937-2.861a.56.56,0,0,1-.227-.45V13.008a.558.558,0,0,1,.556-.556h1.484a.558.558,0,0,1,.556.556v6.571l3.1,2.254a.556.556,0,0,1,.121.779l-.872,1.2A.56.56,0,0,1,22.366,23.933Z" transform="translate(-8 -8)"/></svg>
-                                                        00:12:00
-                                                    </p>
-                                                </div>
-                                                <div class="col-3 col-info-cards">
-                                                    <p class="p-nome-pessoa-chamada">Alexandre Magalhães</p>
-                                                </div>
-                                                <div class="col-1 col-info-cards">
-                                                    <p class="p-numero-pessoas-ninguem-na-sala">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24.286 17"><path class="ninguem-na-sala-svg" d="M3.643,39.286a2.429,2.429,0,1,0-2.429-2.429A2.431,2.431,0,0,0,3.643,39.286Zm17,0a2.429,2.429,0,1,0-2.429-2.429A2.431,2.431,0,0,0,20.643,39.286ZM21.857,40.5H19.429a2.421,2.421,0,0,0-1.711.706,5.551,5.551,0,0,1,2.85,4.151h2.5a1.213,1.213,0,0,0,1.214-1.214V42.929A2.431,2.431,0,0,0,21.857,40.5Zm-9.714,0a4.25,4.25,0,1,0-4.25-4.25A4.248,4.248,0,0,0,12.143,40.5Zm2.914,1.214h-.315a5.868,5.868,0,0,1-5.2,0H9.229a4.373,4.373,0,0,0-4.371,4.371v1.093A1.822,1.822,0,0,0,6.679,49H17.607a1.822,1.822,0,0,0,1.821-1.821V46.086A4.373,4.373,0,0,0,15.057,41.714Zm-8.489-.508A2.421,2.421,0,0,0,4.857,40.5H2.429A2.431,2.431,0,0,0,0,42.929v1.214a1.213,1.213,0,0,0,1.214,1.214h2.5a5.565,5.565,0,0,1,2.854-4.151Z" transform="translate(0 -32)"/></svg>
-                                                        (3)
-                                                    </p>
-                                                </div>
-                                                <div class="col-3 col-info-cards">
-                                                    <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="14" viewBox="0 0 17.5 14"><path class="entrar-na-sala-svg" d="M17.063,12.251H14.875V3.1a1.334,1.334,0,0,0-1.313-1.352H10.5V3.5h2.625V14h3.938a.437.437,0,0,0,.438-.438v-.875A.437.437,0,0,0,17.063,12.251ZM8.538.029l-5.25,1.36a.9.9,0,0,0-.663.88v9.983H.438A.437.437,0,0,0,0,12.688v.875A.437.437,0,0,0,.438,14H9.625V.908A.882.882,0,0,0,8.538.029ZM7.219,7.876c-.362,0-.656-.392-.656-.875s.294-.875.656-.875.656.392.656.875S7.581,7.876,7.219,7.876Z" transform="translate(0 -0.001)"/></svg>
-                                                        ENTRAR NA SALA
-                                                      </button>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 text-right">
-                                                <a href="" class="btn-veja-todas">
-                                                    VEJA TODAS
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15.39" height="15" viewBox="0 0 15.39 15"><path class="seta-direita-svg" d="M6.543,38.655l.763-.763a.821.821,0,0,1,1.164,0l6.677,6.674a.821.821,0,0,1,0,1.164L8.47,52.408a.821.821,0,0,1-1.164,0l-.763-.763a.825.825,0,0,1,.014-1.178L10.7,46.524H.824A.822.822,0,0,1,0,45.7V44.6a.822.822,0,0,1,.824-.824H10.7L6.557,39.833A.819.819,0,0,1,6.543,38.655Z" transform="translate(0 -37.65)"/></svg>
-                                                </a>
-                                            </div>
-                                        </div>
+                                    <div class="info-card-p">
+                                        <p class="p-tatal">ATENDIDOS</p>
+                                        <p class="p-numer-cards">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path class="atendido-svg" d="M11.5,8A11.5,11.5,0,1,0,23,19.5,11.5,11.5,0,0,0,11.5,8Zm0,20.774A9.274,9.274,0,1,1,20.774,19.5,9.284,9.284,0,0,1,11.5,28.774Zm3.9-6.65a5.066,5.066,0,0,1-7.79,0,1.113,1.113,0,0,0-1.711,1.424,7.3,7.3,0,0,0,11.213,0A1.113,1.113,0,0,0,15.4,22.125ZM6.33,17.413a1.735,1.735,0,0,1,1.461-1,1.735,1.735,0,0,1,1.461,1l.441.788a.367.367,0,0,0,.431.172.372.372,0,0,0,.264-.385c-.153-1.952-1.493-3.311-2.6-3.311s-2.444,1.359-2.6,3.311a.375.375,0,0,0,.264.385.38.38,0,0,0,.431-.172Zm8.88-2.736c-1.1,0-2.444,1.359-2.6,3.311a.373.373,0,0,0,.7.213l.441-.788a1.735,1.735,0,0,1,1.461-1,1.735,1.735,0,0,1,1.461,1l.441.788a.367.367,0,0,0,.431.172.372.372,0,0,0,.264-.385C17.653,16.036,16.313,14.677,15.21,14.677Z" transform="translate(0 -8)"/></svg>
+                                            120
+                                        </p>
+                                        <p class="p-leads-cards">Leads</p>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="card">
-                                        <div class="card-header">
-                                          <div class="d-flex">
-                                              <p class="titulo-card">Tempo médio de atendimento</p>
-                                              <a href="#" data-toggle="tooltip" title="Some tooltip text!">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"><path class="icon-tooltip" d="M14.5,8A6.5,6.5,0,1,0,21,14.5,6.5,6.5,0,0,0,14.5,8Zm0,2.883a1.1,1.1,0,1,1-1.1,1.1A1.1,1.1,0,0,1,14.5,10.883Zm1.468,6.657a.315.315,0,0,1-.315.315H13.347a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h.315V14.919h-.315a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h1.677a.315.315,0,0,1,.315.315V16.6h.315a.315.315,0,0,1,.315.315Z" transform="translate(-8 -8)"/></svg>
-                                            </a>
-                                          </div>
-                                          <div>
-                                            <h1>
-                                                grafico
-                                            </h1>
-                                        </div>
-                                        </div>
-                                        
-                                        <div class="card-body">
-                                            <div class="d-flex">
-                                                <div class="col-8 d-flex">
-                                                  <div class="col-5 col-info-cards">
-                                                        <p class="p-tatal">TEMPO TOTAL</p>
-                                                        <p class="p-numer-cards">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path class="relogio-cinza-svg" d="M19.5,8A11.5,11.5,0,1,0,31,19.5,11.5,11.5,0,0,0,19.5,8Zm0,20.774A9.274,9.274,0,1,1,28.774,19.5,9.272,9.272,0,0,1,19.5,28.774Zm2.866-4.841-3.937-2.861a.56.56,0,0,1-.227-.45V13.008a.558.558,0,0,1,.556-.556h1.484a.558.558,0,0,1,.556.556v6.571l3.1,2.254a.556.556,0,0,1,.121.779l-.872,1.2A.56.56,0,0,1,22.366,23.933Z" transform="translate(-8 -8)"/></svg>
-                                                            200
-                                                        </p>
-                                                      <p class="p-leads-cards">minutos</p>
-                                                  </div>
-                                                  <div class="col-5 col-info-cards">
-                                                        <p class="p-tatal">ATENDIDOS</p>
-                                                        <p class="p-numer-cards">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path class="relogio-azul-svg" d="M19.5,8A11.5,11.5,0,1,0,31,19.5,11.5,11.5,0,0,0,19.5,8Zm0,20.774A9.274,9.274,0,1,1,28.774,19.5,9.272,9.272,0,0,1,19.5,28.774Zm2.866-4.841-3.937-2.861a.56.56,0,0,1-.227-.45V13.008a.558.558,0,0,1,.556-.556h1.484a.558.558,0,0,1,.556.556v6.571l3.1,2.254a.556.556,0,0,1,.121.779l-.872,1.2A.56.56,0,0,1,22.366,23.933Z" transform="translate(-8 -8)"/></svg>
-                                                          120
-                                                        </p>
-                                                      <p class="p-leads-cards">minutos</p>
-                                                  </div>
-                                                </div>
-                                                <div class="col-4 col-info-cards">
-                                                    <!-- botão para o modal -->
-                                                  <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
-                                                      MAIS DETALHES
-                                                    </button> 
-                                                    <!-- botão para o modal -->
-                                                  <p class="compare-os-leads-p">Compare os leads das unidades</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="info-card-p">
+                                        <p class="p-tatal">NÃO ATENDIDOS</p>
+                                        <p class="p-numer-cards">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path class="nao-atendido-svg" d="M11.5,8A11.5,11.5,0,1,0,23,19.5,11.5,11.5,0,0,0,11.5,8Zm0,20.774A9.274,9.274,0,1,1,20.774,19.5,9.284,9.284,0,0,1,11.5,28.774ZM7.79,18.758a1.484,1.484,0,1,0-1.484-1.484A1.482,1.482,0,0,0,7.79,18.758ZM15.21,15.79a1.484,1.484,0,1,0,1.484,1.484A1.482,1.482,0,0,0,15.21,15.79ZM11.5,21.726a6.253,6.253,0,0,0-4.813,2.254A1.113,1.113,0,0,0,8.4,25.4a4.033,4.033,0,0,1,6.2,0,1.113,1.113,0,0,0,1.711-1.424A6.253,6.253,0,0,0,11.5,21.726Z" transform="translate(0 -8)"/></svg>
+                                            80
+                                        </p>
+                                        <p class="p-leads-cards">Leads</p>
                                     </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <div class="d-flex">
-                                                <p class="titulo-card">Tempo médio de espera</p>
-                                                <a href="#" data-toggle="tooltip" title="Some tooltip text!">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"><path class="icon-tooltip" d="M14.5,8A6.5,6.5,0,1,0,21,14.5,6.5,6.5,0,0,0,14.5,8Zm0,2.883a1.1,1.1,0,1,1-1.1,1.1A1.1,1.1,0,0,1,14.5,10.883Zm1.468,6.657a.315.315,0,0,1-.315.315H13.347a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h.315V14.919h-.315a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h1.677a.315.315,0,0,1,.315.315V16.6h.315a.315.315,0,0,1,.315.315Z" transform="translate(-8 -8)"/></svg>
-                                                </a>
-                                            </div>
-                                            <div>
-                                                <h1>
-                                                    grafico
-                                                </h1> 
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="d-flex">
-                                                <div class="col-8 d-flex">
-                                                  <div class="col-5 col-info-cards">
-                                                        <p class="p-tatal">TEMPO TOTAL</p>
-                                                        <p class="p-numer-cards">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path class="relogio-cinza-svg" d="M19.5,8A11.5,11.5,0,1,0,31,19.5,11.5,11.5,0,0,0,19.5,8Zm0,20.774A9.274,9.274,0,1,1,28.774,19.5,9.272,9.272,0,0,1,19.5,28.774Zm2.866-4.841-3.937-2.861a.56.56,0,0,1-.227-.45V13.008a.558.558,0,0,1,.556-.556h1.484a.558.558,0,0,1,.556.556v6.571l3.1,2.254a.556.556,0,0,1,.121.779l-.872,1.2A.56.56,0,0,1,22.366,23.933Z" transform="translate(-8 -8)"/></svg>
-                                                            200
-                                                        </p>
-                                                      <p class="p-leads-cards">minutos</p>
-                                                  </div>
-                                                  <div class="col-5 col-info-cards">
-                                                        <p class="p-tatal">TEMPO MÉDIO</p>
-                                                        <p class="p-numer-cards">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path class="relogio-azul-svg" d="M19.5,8A11.5,11.5,0,1,0,31,19.5,11.5,11.5,0,0,0,19.5,8Zm0,20.774A9.274,9.274,0,1,1,28.774,19.5,9.272,9.272,0,0,1,19.5,28.774Zm2.866-4.841-3.937-2.861a.56.56,0,0,1-.227-.45V13.008a.558.558,0,0,1,.556-.556h1.484a.558.558,0,0,1,.556.556v6.571l3.1,2.254a.556.556,0,0,1,.121.779l-.872,1.2A.56.56,0,0,1,22.366,23.933Z" transform="translate(-8 -8)"/></svg>
-                                                          120
-                                                        </p>
-                                                      <p class="p-leads-cards">minutos</p>
-                                                  </div>
-                                                </div>
-                                                <div class="col-4 col-info-cards">
-                                                    <!-- botão para o modal -->
-                                                  <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
-                                                      MAIS DETALHES
-                                                    </button> 
-                                                    <!-- botão para o modal -->
-                                                  <p class="compare-os-leads-p">Compare os leads das unidades</p>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <div class="d-flex">
-                                                <p class="titulo-card">Leads agendado</p>
-                                                <a href="#" data-toggle="tooltip" title="Some tooltip text!">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"><path class="icon-tooltip" d="M14.5,8A6.5,6.5,0,1,0,21,14.5,6.5,6.5,0,0,0,14.5,8Zm0,2.883a1.1,1.1,0,1,1-1.1,1.1A1.1,1.1,0,0,1,14.5,10.883Zm1.468,6.657a.315.315,0,0,1-.315.315H13.347a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h.315V14.919h-.315a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h1.677a.315.315,0,0,1,.315.315V16.6h.315a.315.315,0,0,1,.315.315Z" transform="translate(-8 -8)"/></svg>
-                                                </a>
-                                            </div>
-                                           
-                                            <p class="subtitulo-card">(Atendidos x Não atendidos)</p>
-                                            <div>
-                                                <h1>Grafico</h1>
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="d-flex">
-                                                <div class="d-flex col-8">
-                                                    <div class="col-3 col-info-cards">
-                                                        <p class="p-tatal">TOTAL</p>
-                                                        <p class="p-numer-cards">200</p>
-                                                        <p class="p-leads-cards">Leads</p>
-                                                    </div>
-                                                    <div class="col-7 col-info-cards">
-                                                        <p class="p-atendidos-cards">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 23 23"><path class="atendido-svg" d="M11.5,8A11.5,11.5,0,1,0,23,19.5,11.5,11.5,0,0,0,11.5,8Zm0,20.774A9.274,9.274,0,1,1,20.774,19.5,9.284,9.284,0,0,1,11.5,28.774Zm3.9-6.65a5.066,5.066,0,0,1-7.79,0,1.113,1.113,0,0,0-1.711,1.424,7.3,7.3,0,0,0,11.213,0A1.113,1.113,0,0,0,15.4,22.125ZM6.33,17.413a1.735,1.735,0,0,1,1.461-1,1.735,1.735,0,0,1,1.461,1l.441.788a.367.367,0,0,0,.431.172.372.372,0,0,0,.264-.385c-.153-1.952-1.493-3.311-2.6-3.311s-2.444,1.359-2.6,3.311a.375.375,0,0,0,.264.385.38.38,0,0,0,.431-.172Zm8.88-2.736c-1.1,0-2.444,1.359-2.6,3.311a.373.373,0,0,0,.7.213l.441-.788a1.735,1.735,0,0,1,1.461-1,1.735,1.735,0,0,1,1.461,1l.441.788a.367.367,0,0,0,.431.172.372.372,0,0,0,.264-.385C17.653,16.036,16.313,14.677,15.21,14.677Z" transform="translate(0 -8)"/></svg>
-                                                            Atendidos na data
-                                                        </p>
-                                                        <p class="p-atendidos-cards">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 23 23"><path class="nao-atendido-svg" d="M11.5,8A11.5,11.5,0,1,0,23,19.5,11.5,11.5,0,0,0,11.5,8Zm0,20.774A9.274,9.274,0,1,1,20.774,19.5,9.284,9.284,0,0,1,11.5,28.774ZM7.79,18.758a1.484,1.484,0,1,0-1.484-1.484A1.482,1.482,0,0,0,7.79,18.758ZM15.21,15.79a1.484,1.484,0,1,0,1.484,1.484A1.482,1.482,0,0,0,15.21,15.79ZM11.5,21.726a6.253,6.253,0,0,0-4.813,2.254A1.113,1.113,0,0,0,8.4,25.4a4.033,4.033,0,0,1,6.2,0,1.113,1.113,0,0,0,1.711-1.424A6.253,6.253,0,0,0,11.5,21.726Z" transform="translate(0 -8)"/></svg>
-                                                            Não Atendidos da data
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-2 col-info-cards">
-                                                        <p class="p-atendidos-na-data">80</p>
-                                                        <p class="p-nao-atendidos-na-data">120</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-4 col-info-cards">
-                                                    <!-- botão para o modal -->
-                                                  <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
-                                                      MAIS DETALHES
-                                                    </button> 
-                                                    <!-- botão para o modal -->
-                                                  <p class="compare-os-leads-p">Compare os leads das unidades</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <div class="d-flex">
-                                                <p class="titulo-card">Leads online</p>
-                                                <a href="#" data-toggle="tooltip" title="Some tooltip text!">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"><path class="icon-tooltip" d="M14.5,8A6.5,6.5,0,1,0,21,14.5,6.5,6.5,0,0,0,14.5,8Zm0,2.883a1.1,1.1,0,1,1-1.1,1.1A1.1,1.1,0,0,1,14.5,10.883Zm1.468,6.657a.315.315,0,0,1-.315.315H13.347a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h.315V14.919h-.315a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h1.677a.315.315,0,0,1,.315.315V16.6h.315a.315.315,0,0,1,.315.315Z" transform="translate(-8 -8)"/></svg>
-                                                </a>
-                                            </div>
-                                            <p class="subtitulo-card">(Atendidos x Não atendidos)</p>
-                                            <div>
-                                                <h1>Grafico</h1>
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="d-flex">
-                                                <div class="d-flex col-8">
-                                                    <div class="col-3 col-info-cards">
-                                                        <p class="p-tatal">TOTAL</p>
-                                                        <p class="p-numer-cards">200</p>
-                                                        <p class="p-leads-cards">Leads</p>
-                                                    </div>
-                                                    <div class="col-7 col-info-cards">
-                                                        <p class="p-atendidos-cards">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 23 23"><path class="atendido-svg" d="M11.5,8A11.5,11.5,0,1,0,23,19.5,11.5,11.5,0,0,0,11.5,8Zm0,20.774A9.274,9.274,0,1,1,20.774,19.5,9.284,9.284,0,0,1,11.5,28.774Zm3.9-6.65a5.066,5.066,0,0,1-7.79,0,1.113,1.113,0,0,0-1.711,1.424,7.3,7.3,0,0,0,11.213,0A1.113,1.113,0,0,0,15.4,22.125ZM6.33,17.413a1.735,1.735,0,0,1,1.461-1,1.735,1.735,0,0,1,1.461,1l.441.788a.367.367,0,0,0,.431.172.372.372,0,0,0,.264-.385c-.153-1.952-1.493-3.311-2.6-3.311s-2.444,1.359-2.6,3.311a.375.375,0,0,0,.264.385.38.38,0,0,0,.431-.172Zm8.88-2.736c-1.1,0-2.444,1.359-2.6,3.311a.373.373,0,0,0,.7.213l.441-.788a1.735,1.735,0,0,1,1.461-1,1.735,1.735,0,0,1,1.461,1l.441.788a.367.367,0,0,0,.431.172.372.372,0,0,0,.264-.385C17.653,16.036,16.313,14.677,15.21,14.677Z" transform="translate(0 -8)"/></svg>
-                                                            Atendidos na data
-                                                        </p>
-                                                        <p class="p-atendidos-cards">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 23 23"><path class="nao-atendido-svg" d="M11.5,8A11.5,11.5,0,1,0,23,19.5,11.5,11.5,0,0,0,11.5,8Zm0,20.774A9.274,9.274,0,1,1,20.774,19.5,9.284,9.284,0,0,1,11.5,28.774ZM7.79,18.758a1.484,1.484,0,1,0-1.484-1.484A1.482,1.482,0,0,0,7.79,18.758ZM15.21,15.79a1.484,1.484,0,1,0,1.484,1.484A1.482,1.482,0,0,0,15.21,15.79ZM11.5,21.726a6.253,6.253,0,0,0-4.813,2.254A1.113,1.113,0,0,0,8.4,25.4a4.033,4.033,0,0,1,6.2,0,1.113,1.113,0,0,0,1.711-1.424A6.253,6.253,0,0,0,11.5,21.726Z" transform="translate(0 -8)"/></svg>
-                                                            Não Atendidos da data
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-2 col-info-cards">
-                                                        <p class="p-atendidos-na-data">80</p>
-                                                        <p class="p-nao-atendidos-na-data">120</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-4 col-info-cards">
-                                                    <!-- botão para o modal -->
-                                                  <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
-                                                      MAIS DETALHES
-                                                    </button> 
-                                                    <!-- botão para o modal -->
-                                                  <p class="compare-os-leads-p">Compare os leads das unidades</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="col-4 col-info-cards">
+                                        <!-- botão para o modal -->
+                                    <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
+                                        MAIS DETALHES
+                                        </button> 
+                                        <!-- botão para o modal -->
+                                    <p class="compare-os-leads-p">Compare os leads</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="salas" role="tabpanel" aria-labelledby="salas-tab">
-                        <div class="row">
-                            <div class="col-12 d-flex">
-                                <p>Em atendimento</p>
-                                <p>Em espera</p>
-                                <p>Sem usuários</p>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <div>
+                                    <div class="d-flex">
+                                        <p class="titulo-card">Duração das chamadas</p>
+                                        <a href="#" data-toggle="tooltip" title="Some tooltip text!">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"><path class="icon-tooltip" d="M14.5,8A6.5,6.5,0,1,0,21,14.5,6.5,6.5,0,0,0,14.5,8Zm0,2.883a1.1,1.1,0,1,1-1.1,1.1A1.1,1.1,0,0,1,14.5,10.883Zm1.468,6.657a.315.315,0,0,1-.315.315H13.347a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h.315V14.919h-.315a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h1.677a.315.315,0,0,1,.315.315V16.6h.315a.315.315,0,0,1,.315.315Z" transform="translate(-8 -8)"/></svg>
+                                        </a>
+                                    </div>
+
+                                    <p class="subtitulo-card">(Minutagem)</p>
+                                </div>
+                                <div class="row d-flex">
+                                    <div class="col-2 ">
+                                        <p class="p-tatal">TOTAL</p>
+                                        <p class="p-numer-cards">6.220</p>
+                                        <p class="p-leads-cards">Minutos</p>
+                                    </div>
+                                    <div class="col-2 ">
+                                        <p class="p-tatal">HOJE</p>
+                                        <p class="p-numer-cards">2</p>
+                                        <p class="p-leads-cards">Minutos</p>
+                                    </div>
+                                    <div class="col-3 col-info-cards">
+                                        <p class="p-tatal">ÚLTIMOS 7 DIAS</p>
+                                        <p class="p-numer-cards">60</p>
+                                        <p class="p-leads-cards">Minutos</p>
+                                    </div>
+                                    <div class="col-4 ">
+                                        <p class="p-tatal">ÚLTIMOS 30 DIAS</p>
+                                        <p class="p-numer-cards-duracao">60</p>
+                                        <p class="p-leads-cards">Minutos</p>
+                                        <p class="p-leads-cards">Mês passado: 72</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-2">
-                                <p>Nome da Sala</p>
-                            </div>
-                            <div class="col-2">
-                                <p>Alexandre Magalhães</p>
-                            </div>
-                            <div class="col-2">
-                                <p>(31)9999-9999</p>
-                            </div>
-                            <div class="col-2">
-                                <p>Nissan Kicks SL</p>
-                            </div>
-                            <div class="col-1">
-                                <p>00:12:00</p>
-                            </div>
-                            <div class="col-1">
-                                <p>(3)</p>
-                            </div>
-                            <div class="col-2">
-                                <a href="">ENTRAR NA SALA</a>
+                            <div class="card-body body-chamada-10-min">
+                                <p class="titulo-card-2">Chamadas acima de 10 minutos:</p>
+                                <div class="col-12 d-flex align-items-baseline card-chamadas-10-min">
+                                    <div class="col-1 col-chamada">
+                                        <a href="" class="chamada-em-andamento">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path class="chamada-em-andamento-svg" d="M16.5,8A8.5,8.5,0,1,0,25,16.5,8.5,8.5,0,0,0,16.5,8Zm3.966,9.323-6.032,3.462a.824.824,0,0,1-1.224-.72V12.935a.825.825,0,0,1,1.224-.72l6.032,3.667A.825.825,0,0,1,20.466,17.323Z" transform="translate(-8 -8)"/></svg>
+                                        </a>
+                                    </div>
+                                    <div class="col-2 col-info-cards">
+                                        <p class="p-nome-da-sala">Nome da Sala</p>
+                                    </div>
+                                    <div class="col-2 col-info-cards">
+                                        <p class="p-duracao-chamada">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 23 23"><path class="relogio-azul-svg" d="M19.5,8A11.5,11.5,0,1,0,31,19.5,11.5,11.5,0,0,0,19.5,8Zm0,20.774A9.274,9.274,0,1,1,28.774,19.5,9.272,9.272,0,0,1,19.5,28.774Zm2.866-4.841-3.937-2.861a.56.56,0,0,1-.227-.45V13.008a.558.558,0,0,1,.556-.556h1.484a.558.558,0,0,1,.556.556v6.571l3.1,2.254a.556.556,0,0,1,.121.779l-.872,1.2A.56.56,0,0,1,22.366,23.933Z" transform="translate(-8 -8)"/></svg>
+                                            00:12:00
+                                        </p>
+                                    </div>
+                                    <div class="col-3 col-info-cards">
+                                        <p class="p-nome-pessoa-chamada">Alexandre Magalhães</p>
+                                    </div>
+                                    <div class="col-1 col-info-cards">
+                                        <p class="p-numero-pesssoas-chamda">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24.286 17"><path class="pessoas-ativas-svg" d="M3.643,39.286a2.429,2.429,0,1,0-2.429-2.429A2.431,2.431,0,0,0,3.643,39.286Zm17,0a2.429,2.429,0,1,0-2.429-2.429A2.431,2.431,0,0,0,20.643,39.286ZM21.857,40.5H19.429a2.421,2.421,0,0,0-1.711.706,5.551,5.551,0,0,1,2.85,4.151h2.5a1.213,1.213,0,0,0,1.214-1.214V42.929A2.431,2.431,0,0,0,21.857,40.5Zm-9.714,0a4.25,4.25,0,1,0-4.25-4.25A4.248,4.248,0,0,0,12.143,40.5Zm2.914,1.214h-.315a5.868,5.868,0,0,1-5.2,0H9.229a4.373,4.373,0,0,0-4.371,4.371v1.093A1.822,1.822,0,0,0,6.679,49H17.607a1.822,1.822,0,0,0,1.821-1.821V46.086A4.373,4.373,0,0,0,15.057,41.714Zm-8.489-.508A2.421,2.421,0,0,0,4.857,40.5H2.429A2.431,2.431,0,0,0,0,42.929v1.214a1.213,1.213,0,0,0,1.214,1.214h2.5a5.565,5.565,0,0,1,2.854-4.151Z" transform="translate(0 -32)"/></svg>
+                                            (3)
+                                        </p>
+                                    </div>
+                                    <div class="col-3 col-info-cards">
+                                        <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="14" viewBox="0 0 17.5 14"><path class="entrar-na-sala-svg" d="M17.063,12.251H14.875V3.1a1.334,1.334,0,0,0-1.313-1.352H10.5V3.5h2.625V14h3.938a.437.437,0,0,0,.438-.438v-.875A.437.437,0,0,0,17.063,12.251ZM8.538.029l-5.25,1.36a.9.9,0,0,0-.663.88v9.983H.438A.437.437,0,0,0,0,12.688v.875A.437.437,0,0,0,.438,14H9.625V.908A.882.882,0,0,0,8.538.029ZM7.219,7.876c-.362,0-.656-.392-.656-.875s.294-.875.656-.875.656.392.656.875S7.581,7.876,7.219,7.876Z" transform="translate(0 -0.001)"/></svg>
+                                            ENTRAR NA SALA
+                                            </button>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex align-items-baseline card-chamadas-10-min">
+                                    <div class="col-1 col-chamada">
+                                        <a href="" class="chamada-em-espera">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12.75" height="17" viewBox="0 0 12.75 17"><path class="chamada-em-espera-svg" d="M11.953,0H.8A.8.8,0,0,0,0,.8v.531a.8.8,0,0,0,.8.8A6.589,6.589,0,0,0,4.809,8.5,6.589,6.589,0,0,0,.8,14.875a.8.8,0,0,0-.8.8V16.2a.8.8,0,0,0,.8.8H11.953a.8.8,0,0,0,.8-.8v-.531a.8.8,0,0,0-.8-.8A6.589,6.589,0,0,0,7.941,8.5a6.589,6.589,0,0,0,4.012-6.375.8.8,0,0,0,.8-.8V.8A.8.8,0,0,0,11.953,0ZM9.828,14.875H2.922c0-2.572,1.534-4.781,3.453-4.781S9.828,12.3,9.828,14.875Z"/></svg>
+                                        </a>
+                                    </div>
+                                    <div class="col-2 col-info-cards">
+                                        <p class="p-nome-da-sala">Nome da Sala</p>
+                                    </div>
+                                    <div class="col-2 col-info-cards">
+                                        <p class="p-duracao-chamada">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 23 23"><path class="relogio-azul-svg" d="M19.5,8A11.5,11.5,0,1,0,31,19.5,11.5,11.5,0,0,0,19.5,8Zm0,20.774A9.274,9.274,0,1,1,28.774,19.5,9.272,9.272,0,0,1,19.5,28.774Zm2.866-4.841-3.937-2.861a.56.56,0,0,1-.227-.45V13.008a.558.558,0,0,1,.556-.556h1.484a.558.558,0,0,1,.556.556v6.571l3.1,2.254a.556.556,0,0,1,.121.779l-.872,1.2A.56.56,0,0,1,22.366,23.933Z" transform="translate(-8 -8)"/></svg>
+                                            00:12:00
+                                        </p>
+                                    </div>
+                                    <div class="col-3 col-info-cards">
+                                        <p class="p-nome-pessoa-chamada">Alexandre Magalhães</p>
+                                    </div>
+                                    <div class="col-1 col-info-cards">
+                                        <p class="p-numero-pessoas-em-espera">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24.286 17"><path class="pessoas-em-espera-svg" d="M3.643,39.286a2.429,2.429,0,1,0-2.429-2.429A2.431,2.431,0,0,0,3.643,39.286Zm17,0a2.429,2.429,0,1,0-2.429-2.429A2.431,2.431,0,0,0,20.643,39.286ZM21.857,40.5H19.429a2.421,2.421,0,0,0-1.711.706,5.551,5.551,0,0,1,2.85,4.151h2.5a1.213,1.213,0,0,0,1.214-1.214V42.929A2.431,2.431,0,0,0,21.857,40.5Zm-9.714,0a4.25,4.25,0,1,0-4.25-4.25A4.248,4.248,0,0,0,12.143,40.5Zm2.914,1.214h-.315a5.868,5.868,0,0,1-5.2,0H9.229a4.373,4.373,0,0,0-4.371,4.371v1.093A1.822,1.822,0,0,0,6.679,49H17.607a1.822,1.822,0,0,0,1.821-1.821V46.086A4.373,4.373,0,0,0,15.057,41.714Zm-8.489-.508A2.421,2.421,0,0,0,4.857,40.5H2.429A2.431,2.431,0,0,0,0,42.929v1.214a1.213,1.213,0,0,0,1.214,1.214h2.5a5.565,5.565,0,0,1,2.854-4.151Z" transform="translate(0 -32)"/></svg>
+                                            (3)
+                                        </p>
+                                    </div>
+                                    <div class="col-3 col-info-cards">
+                                        <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="14" viewBox="0 0 17.5 14"><path class="entrar-na-sala-svg" d="M17.063,12.251H14.875V3.1a1.334,1.334,0,0,0-1.313-1.352H10.5V3.5h2.625V14h3.938a.437.437,0,0,0,.438-.438v-.875A.437.437,0,0,0,17.063,12.251ZM8.538.029l-5.25,1.36a.9.9,0,0,0-.663.88v9.983H.438A.437.437,0,0,0,0,12.688v.875A.437.437,0,0,0,.438,14H9.625V.908A.882.882,0,0,0,8.538.029ZM7.219,7.876c-.362,0-.656-.392-.656-.875s.294-.875.656-.875.656.392.656.875S7.581,7.876,7.219,7.876Z" transform="translate(0 -0.001)"/></svg>
+                                            ENTRAR NA SALA
+                                            </button>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex align-items-baseline card-chamadas-10-min">
+                                    <div class="col-1 col-chamada">
+                                        <a href="" class="ninguem-na-sala">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path class="ninguem-na-sala-stop-svg" d="M16.5,8A8.5,8.5,0,1,0,25,16.5,8.5,8.5,0,0,0,16.5,8Zm3.29,11.242a.55.55,0,0,1-.548.548H13.758a.55.55,0,0,1-.548-.548V13.758a.55.55,0,0,1,.548-.548h5.484a.55.55,0,0,1,.548.548Z" transform="translate(-8 -8)"/></svg></svg>
+                                        </a>
+                                    </div>
+                                    <div class="col-2 col-info-cards">
+                                        <p class="p-nome-da-sala">Nome da Sala</p>
+                                    </div>
+                                    <div class="col-2 col-info-cards">
+                                        <p class="p-duracao-chamada">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 23 23"><path class="relogio-azul-svg" d="M19.5,8A11.5,11.5,0,1,0,31,19.5,11.5,11.5,0,0,0,19.5,8Zm0,20.774A9.274,9.274,0,1,1,28.774,19.5,9.272,9.272,0,0,1,19.5,28.774Zm2.866-4.841-3.937-2.861a.56.56,0,0,1-.227-.45V13.008a.558.558,0,0,1,.556-.556h1.484a.558.558,0,0,1,.556.556v6.571l3.1,2.254a.556.556,0,0,1,.121.779l-.872,1.2A.56.56,0,0,1,22.366,23.933Z" transform="translate(-8 -8)"/></svg>
+                                            00:12:00
+                                        </p>
+                                    </div>
+                                    <div class="col-3 col-info-cards">
+                                        <p class="p-nome-pessoa-chamada">Alexandre Magalhães</p>
+                                    </div>
+                                    <div class="col-1 col-info-cards">
+                                        <p class="p-numero-pessoas-ninguem-na-sala">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24.286 17"><path class="ninguem-na-sala-svg" d="M3.643,39.286a2.429,2.429,0,1,0-2.429-2.429A2.431,2.431,0,0,0,3.643,39.286Zm17,0a2.429,2.429,0,1,0-2.429-2.429A2.431,2.431,0,0,0,20.643,39.286ZM21.857,40.5H19.429a2.421,2.421,0,0,0-1.711.706,5.551,5.551,0,0,1,2.85,4.151h2.5a1.213,1.213,0,0,0,1.214-1.214V42.929A2.431,2.431,0,0,0,21.857,40.5Zm-9.714,0a4.25,4.25,0,1,0-4.25-4.25A4.248,4.248,0,0,0,12.143,40.5Zm2.914,1.214h-.315a5.868,5.868,0,0,1-5.2,0H9.229a4.373,4.373,0,0,0-4.371,4.371v1.093A1.822,1.822,0,0,0,6.679,49H17.607a1.822,1.822,0,0,0,1.821-1.821V46.086A4.373,4.373,0,0,0,15.057,41.714Zm-8.489-.508A2.421,2.421,0,0,0,4.857,40.5H2.429A2.431,2.431,0,0,0,0,42.929v1.214a1.213,1.213,0,0,0,1.214,1.214h2.5a5.565,5.565,0,0,1,2.854-4.151Z" transform="translate(0 -32)"/></svg>
+                                            (3)
+                                        </p>
+                                    </div>
+                                    <div class="col-3 col-info-cards">
+                                        <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="14" viewBox="0 0 17.5 14"><path class="entrar-na-sala-svg" d="M17.063,12.251H14.875V3.1a1.334,1.334,0,0,0-1.313-1.352H10.5V3.5h2.625V14h3.938a.437.437,0,0,0,.438-.438v-.875A.437.437,0,0,0,17.063,12.251ZM8.538.029l-5.25,1.36a.9.9,0,0,0-.663.88v9.983H.438A.437.437,0,0,0,0,12.688v.875A.437.437,0,0,0,.438,14H9.625V.908A.882.882,0,0,0,8.538.029ZM7.219,7.876c-.362,0-.656-.392-.656-.875s.294-.875.656-.875.656.392.656.875S7.581,7.876,7.219,7.876Z" transform="translate(0 -0.001)"/></svg>
+                                            ENTRAR NA SALA
+                                            </button>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-right">
+                                    <a href="" class="btn-veja-todas">
+                                        VEJA TODAS
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15.39" height="15" viewBox="0 0 15.39 15"><path class="seta-direita-svg" d="M6.543,38.655l.763-.763a.821.821,0,0,1,1.164,0l6.677,6.674a.821.821,0,0,1,0,1.164L8.47,52.408a.821.821,0,0,1-1.164,0l-.763-.763a.825.825,0,0,1,.014-1.178L10.7,46.524H.824A.822.822,0,0,1,0,45.7V44.6a.822.822,0,0,1,.824-.824H10.7L6.557,39.833A.819.819,0,0,1,6.543,38.655Z" transform="translate(0 -37.65)"/></svg>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="d-flex">
+                                    <p class="titulo-card">Tempo médio de atendimento</p>
+                                    <a href="#" data-toggle="tooltip" title="Some tooltip text!">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"><path class="icon-tooltip" d="M14.5,8A6.5,6.5,0,1,0,21,14.5,6.5,6.5,0,0,0,14.5,8Zm0,2.883a1.1,1.1,0,1,1-1.1,1.1A1.1,1.1,0,0,1,14.5,10.883Zm1.468,6.657a.315.315,0,0,1-.315.315H13.347a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h.315V14.919h-.315a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h1.677a.315.315,0,0,1,.315.315V16.6h.315a.315.315,0,0,1,.315.315Z" transform="translate(-8 -8)"/></svg>
+                                </a>
+                                </div>
+                                <div class="col-12 text-center" id="tempomedioatendimento"></div>
+                            </div>
+                            
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="col-8 d-flex">
+                                        <div class="col-5 col-info-cards">
+                                            <p class="p-tatal">TEMPO TOTAL</p>
+                                            <p class="p-numer-cards">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path class="relogio-cinza-svg" d="M19.5,8A11.5,11.5,0,1,0,31,19.5,11.5,11.5,0,0,0,19.5,8Zm0,20.774A9.274,9.274,0,1,1,28.774,19.5,9.272,9.272,0,0,1,19.5,28.774Zm2.866-4.841-3.937-2.861a.56.56,0,0,1-.227-.45V13.008a.558.558,0,0,1,.556-.556h1.484a.558.558,0,0,1,.556.556v6.571l3.1,2.254a.556.556,0,0,1,.121.779l-.872,1.2A.56.56,0,0,1,22.366,23.933Z" transform="translate(-8 -8)"/></svg>
+                                                200
+                                            </p>
+                                            <p class="p-leads-cards">minutos</p>
+                                        </div>
+                                        <div class="col-5 col-info-cards">
+                                            <p class="p-tatal">ATENDIDOS</p>
+                                            <p class="p-numer-cards">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path class="relogio-azul-svg" d="M19.5,8A11.5,11.5,0,1,0,31,19.5,11.5,11.5,0,0,0,19.5,8Zm0,20.774A9.274,9.274,0,1,1,28.774,19.5,9.272,9.272,0,0,1,19.5,28.774Zm2.866-4.841-3.937-2.861a.56.56,0,0,1-.227-.45V13.008a.558.558,0,0,1,.556-.556h1.484a.558.558,0,0,1,.556.556v6.571l3.1,2.254a.556.556,0,0,1,.121.779l-.872,1.2A.56.56,0,0,1,22.366,23.933Z" transform="translate(-8 -8)"/></svg>
+                                                120
+                                            </p>
+                                            <p class="p-leads-cards">minutos</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-info-cards">
+                                        <!-- botão para o modal -->
+                                        <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
+                                            MAIS DETALHES
+                                        </button> 
+                                        <!-- botão para o modal -->
+                                        <p class="compare-os-leads-p">Compare os leads das unidades</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="d-flex">
+                                    <p class="titulo-card">Tempo médio de espera</p>
+                                    <a href="#" data-toggle="tooltip" title="Some tooltip text!">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"><path class="icon-tooltip" d="M14.5,8A6.5,6.5,0,1,0,21,14.5,6.5,6.5,0,0,0,14.5,8Zm0,2.883a1.1,1.1,0,1,1-1.1,1.1A1.1,1.1,0,0,1,14.5,10.883Zm1.468,6.657a.315.315,0,0,1-.315.315H13.347a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h.315V14.919h-.315a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h1.677a.315.315,0,0,1,.315.315V16.6h.315a.315.315,0,0,1,.315.315Z" transform="translate(-8 -8)"/></svg>
+                                    </a>
+                                </div>
+                                <div class="col-12 text-center" id="tempomedioespera">
+                                   
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="col-8 d-flex">
+                                        <div class="col-5 col-info-cards">
+                                            <p class="p-tatal">TEMPO TOTAL</p>
+                                            <p class="p-numer-cards">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path class="relogio-cinza-svg" d="M19.5,8A11.5,11.5,0,1,0,31,19.5,11.5,11.5,0,0,0,19.5,8Zm0,20.774A9.274,9.274,0,1,1,28.774,19.5,9.272,9.272,0,0,1,19.5,28.774Zm2.866-4.841-3.937-2.861a.56.56,0,0,1-.227-.45V13.008a.558.558,0,0,1,.556-.556h1.484a.558.558,0,0,1,.556.556v6.571l3.1,2.254a.556.556,0,0,1,.121.779l-.872,1.2A.56.56,0,0,1,22.366,23.933Z" transform="translate(-8 -8)"/></svg>
+                                                200
+                                            </p>
+                                            <p class="p-leads-cards">minutos</p>
+                                        </div>
+                                        <div class="col-5 col-info-cards">
+                                            <p class="p-tatal">TEMPO MÉDIO</p>
+                                            <p class="p-numer-cards">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path class="relogio-azul-svg" d="M19.5,8A11.5,11.5,0,1,0,31,19.5,11.5,11.5,0,0,0,19.5,8Zm0,20.774A9.274,9.274,0,1,1,28.774,19.5,9.272,9.272,0,0,1,19.5,28.774Zm2.866-4.841-3.937-2.861a.56.56,0,0,1-.227-.45V13.008a.558.558,0,0,1,.556-.556h1.484a.558.558,0,0,1,.556.556v6.571l3.1,2.254a.556.556,0,0,1,.121.779l-.872,1.2A.56.56,0,0,1,22.366,23.933Z" transform="translate(-8 -8)"/></svg>
+                                                120
+                                            </p>
+                                            <p class="p-leads-cards">minutos</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-info-cards">
+                                        <!-- botão para o modal -->
+                                        <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
+                                            MAIS DETALHES
+                                        </button> 
+                                        <!-- botão para o modal -->
+                                        <p class="compare-os-leads-p">Compare os leads das unidades</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="d-flex">
+                                    <p class="titulo-card">Leads agendado</p>
+                                    <a href="#" data-toggle="tooltip" title="Some tooltip text!">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"><path class="icon-tooltip" d="M14.5,8A6.5,6.5,0,1,0,21,14.5,6.5,6.5,0,0,0,14.5,8Zm0,2.883a1.1,1.1,0,1,1-1.1,1.1A1.1,1.1,0,0,1,14.5,10.883Zm1.468,6.657a.315.315,0,0,1-.315.315H13.347a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h.315V14.919h-.315a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h1.677a.315.315,0,0,1,.315.315V16.6h.315a.315.315,0,0,1,.315.315Z" transform="translate(-8 -8)"/></svg>
+                                    </a>
+                                </div>
+                                
+                                <p class="subtitulo-card">(Atendidos x Não atendidos)</p>
+                                <div class="col-12 text-center" id="leadagendado">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="d-flex col-8">
+                                        <div class="col-3 col-info-cards">
+                                            <p class="p-tatal">TOTAL</p>
+                                            <p class="p-numer-cards">200</p>
+                                            <p class="p-leads-cards">Leads</p>
+                                        </div>
+                                        <div class="col-7 col-info-cards">
+                                            <p class="p-atendidos-cards">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 23 23"><path class="atendido-svg" d="M11.5,8A11.5,11.5,0,1,0,23,19.5,11.5,11.5,0,0,0,11.5,8Zm0,20.774A9.274,9.274,0,1,1,20.774,19.5,9.284,9.284,0,0,1,11.5,28.774Zm3.9-6.65a5.066,5.066,0,0,1-7.79,0,1.113,1.113,0,0,0-1.711,1.424,7.3,7.3,0,0,0,11.213,0A1.113,1.113,0,0,0,15.4,22.125ZM6.33,17.413a1.735,1.735,0,0,1,1.461-1,1.735,1.735,0,0,1,1.461,1l.441.788a.367.367,0,0,0,.431.172.372.372,0,0,0,.264-.385c-.153-1.952-1.493-3.311-2.6-3.311s-2.444,1.359-2.6,3.311a.375.375,0,0,0,.264.385.38.38,0,0,0,.431-.172Zm8.88-2.736c-1.1,0-2.444,1.359-2.6,3.311a.373.373,0,0,0,.7.213l.441-.788a1.735,1.735,0,0,1,1.461-1,1.735,1.735,0,0,1,1.461,1l.441.788a.367.367,0,0,0,.431.172.372.372,0,0,0,.264-.385C17.653,16.036,16.313,14.677,15.21,14.677Z" transform="translate(0 -8)"/></svg>
+                                                Atendidos na data
+                                            </p>
+                                            <p class="p-atendidos-cards">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 23 23"><path class="nao-atendido-svg" d="M11.5,8A11.5,11.5,0,1,0,23,19.5,11.5,11.5,0,0,0,11.5,8Zm0,20.774A9.274,9.274,0,1,1,20.774,19.5,9.284,9.284,0,0,1,11.5,28.774ZM7.79,18.758a1.484,1.484,0,1,0-1.484-1.484A1.482,1.482,0,0,0,7.79,18.758ZM15.21,15.79a1.484,1.484,0,1,0,1.484,1.484A1.482,1.482,0,0,0,15.21,15.79ZM11.5,21.726a6.253,6.253,0,0,0-4.813,2.254A1.113,1.113,0,0,0,8.4,25.4a4.033,4.033,0,0,1,6.2,0,1.113,1.113,0,0,0,1.711-1.424A6.253,6.253,0,0,0,11.5,21.726Z" transform="translate(0 -8)"/></svg>
+                                                Não Atendidos da data
+                                            </p>
+                                        </div>
+                                        <div class="col-2 col-info-cards">
+                                            <p class="p-atendidos-na-data">80</p>
+                                            <p class="p-nao-atendidos-na-data">120</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-info-cards">
+                                        <!-- botão para o modal -->
+                                        <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
+                                            MAIS DETALHES
+                                        </button> 
+                                        <!-- botão para o modal -->
+                                        <p class="compare-os-leads-p">Compare os leads das unidades</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="d-flex">
+                                    <p class="titulo-card">Leads online</p>
+                                    <a href="#" data-toggle="tooltip" title="Some tooltip text!">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"><path class="icon-tooltip" d="M14.5,8A6.5,6.5,0,1,0,21,14.5,6.5,6.5,0,0,0,14.5,8Zm0,2.883a1.1,1.1,0,1,1-1.1,1.1A1.1,1.1,0,0,1,14.5,10.883Zm1.468,6.657a.315.315,0,0,1-.315.315H13.347a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h.315V14.919h-.315a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h1.677a.315.315,0,0,1,.315.315V16.6h.315a.315.315,0,0,1,.315.315Z" transform="translate(-8 -8)"/></svg>
+                                    </a>
+                                </div>
+                                <p class="subtitulo-card">(Atendidos x Não atendidos)</p>
+                                <div class="col-12 text-center" id="leadonline">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="d-flex col-8">
+                                        <div class="col-3 col-info-cards">
+                                            <p class="p-tatal">TOTAL</p>
+                                            <p class="p-numer-cards">200</p>
+                                            <p class="p-leads-cards">Leads</p>
+                                        </div>
+                                        <div class="col-7 col-info-cards">
+                                            <p class="p-atendidos-cards">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 23 23"><path class="atendido-svg" d="M11.5,8A11.5,11.5,0,1,0,23,19.5,11.5,11.5,0,0,0,11.5,8Zm0,20.774A9.274,9.274,0,1,1,20.774,19.5,9.284,9.284,0,0,1,11.5,28.774Zm3.9-6.65a5.066,5.066,0,0,1-7.79,0,1.113,1.113,0,0,0-1.711,1.424,7.3,7.3,0,0,0,11.213,0A1.113,1.113,0,0,0,15.4,22.125ZM6.33,17.413a1.735,1.735,0,0,1,1.461-1,1.735,1.735,0,0,1,1.461,1l.441.788a.367.367,0,0,0,.431.172.372.372,0,0,0,.264-.385c-.153-1.952-1.493-3.311-2.6-3.311s-2.444,1.359-2.6,3.311a.375.375,0,0,0,.264.385.38.38,0,0,0,.431-.172Zm8.88-2.736c-1.1,0-2.444,1.359-2.6,3.311a.373.373,0,0,0,.7.213l.441-.788a1.735,1.735,0,0,1,1.461-1,1.735,1.735,0,0,1,1.461,1l.441.788a.367.367,0,0,0,.431.172.372.372,0,0,0,.264-.385C17.653,16.036,16.313,14.677,15.21,14.677Z" transform="translate(0 -8)"/></svg>
+                                                Atendidos na data
+                                            </p>
+                                            <p class="p-atendidos-cards">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 23 23"><path class="nao-atendido-svg" d="M11.5,8A11.5,11.5,0,1,0,23,19.5,11.5,11.5,0,0,0,11.5,8Zm0,20.774A9.274,9.274,0,1,1,20.774,19.5,9.284,9.284,0,0,1,11.5,28.774ZM7.79,18.758a1.484,1.484,0,1,0-1.484-1.484A1.482,1.482,0,0,0,7.79,18.758ZM15.21,15.79a1.484,1.484,0,1,0,1.484,1.484A1.482,1.482,0,0,0,15.21,15.79ZM11.5,21.726a6.253,6.253,0,0,0-4.813,2.254A1.113,1.113,0,0,0,8.4,25.4a4.033,4.033,0,0,1,6.2,0,1.113,1.113,0,0,0,1.711-1.424A6.253,6.253,0,0,0,11.5,21.726Z" transform="translate(0 -8)"/></svg>
+                                                Não Atendidos da data
+                                            </p>
+                                        </div>
+                                        <div class="col-2 col-info-cards">
+                                            <p class="p-atendidos-na-data">80</p>
+                                            <p class="p-nao-atendidos-na-data">120</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-info-cards">
+                                        <!-- botão para o modal -->
+                                        <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
+                                            MAIS DETALHES
+                                        </button> 
+                                        <!-- botão para o modal -->
+                                        <p class="compare-os-leads-p">Compare os leads das unidades</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="salas" role="tabpanel" aria-labelledby="salas-tab">
+            <div class="row">
+                <div class="col-12 d-flex">
+                    <p>Em atendimento</p>
+                    <p>Em espera</p>
+                    <p>Sem usuários</p>
+                </div>
+                <div class="col-2">
+                    <p>Nome da Sala</p>
+                </div>
+                <div class="col-2">
+                    <p>Alexandre Magalhães</p>
+                </div>
+                <div class="col-2">
+                    <p>(31)9999-9999</p>
+                </div>
+                <div class="col-2">
+                    <p>Nissan Kicks SL</p>
+                </div>
+                <div class="col-1">
+                    <p>00:12:00</p>
+                </div>
+                <div class="col-1">
+                    <p>(3)</p>
+                </div>
+                <div class="col-2">
+                    <a href="">ENTRAR NA SALA</a>
+                </div>
+            </div>
+        </div>
+    </div>
                 
     
   

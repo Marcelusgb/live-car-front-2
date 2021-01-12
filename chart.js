@@ -5,9 +5,11 @@ google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(displayCharts);
 
 
-function tempoMedioEspera(){
+// Grafico Tempo Medio de Atendimento 
+
+function tempoMedioAtendimento(){
     var data = google.visualization.arrayToDataTable([
-        ['Year', 'Sales', 'Expenses', 'ppk'], //Colunas
+        ['Year', 'Sales', 'Expenses', 'eita'], //Colunas
         ['2004',  1000,      400,  555], //linhas
         ['2005',  1170,      460,  998],
         ['2006',  660,       1120, 777],
@@ -20,45 +22,49 @@ function tempoMedioEspera(){
             position:  'top', 
             alignment: 'center',
         },
-        width: 900,//Largura do gráfico
-        height: 400,//Altura do gráfico
+        width: 550,
+        height: 280,
     };
 
-    var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+    var chart = new google.visualization.LineChart(document.getElementById('tempomedioatendimento'));
 
     chart.draw(data, options);
 
 }
 
 
+// Grafico Tempo Medio de Espera
+
+function tempoMedioEspera(){
+    var data = google.visualization.arrayToDataTable([
+        ['Year', 'Sales', 'Expenses', 'eita'], //Colunas
+        ['2004',  1000,      400,  555], //linhas
+        ['2005',  1170,      460,  998],
+        ['2006',  660,       1120, 777],
+        ['2007',  1030,      540,  300]
+    ]);
+
+    var options = {
+        curveType: 'function', //Adiciona curvas mais suaves nas linhas do gráfico
+        legend: { //Configurações da legenda
+            position:  'top', 
+            alignment: 'center',
+        },
+        width: 550,
+        height: 280,
+    };
+
+    var chart = new google.visualization.LineChart(document.getElementById('tempomedioespera'));
+
+    chart.draw(data, options);
+}
 
 
-// function drawLine() {
-
-//     var data = google.visualization.arrayToDataTable([
-//         ['Year', 'Sales', 'Expenses'], //Colunas
-//         ['2004',  1000,      400], //linhas
-//         ['2005',  1170,      460],
-//         ['2006',  660,       1120],
-//         ['2007',  1030,      540]
-//     ]);
-
-//     var options = {
-//         curveType: 'function', //Adiciona curvas mais suaves nas linhas do gráfico
-//         legend: { //Configurações da legenda
-//             position:  'top', 
-//             alignment: 'center',
-//         },
-//         width: 900,//Largura do gráfico
-//         height: 400,//Altura do gráfico
-//     };
-
-//     var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
-
-//     chart.draw(data, options);
-// }
 
 
+
+
+// Grafico Leads Gerados
 
 function leadsGerados (){
     var data = google.visualization.arrayToDataTable([
@@ -68,48 +74,81 @@ function leadsGerados (){
     ]);
 
     var options = {
-        width: 900,
-        height: 400,
-        pieHole: 0.4,//Tamanho central do donut
+        width: 520,
+        height: 310,
+        pieHole: 0.5,//Tamanho central do donut
         legend: {
           position: 'labeled', //coloca o valor fora do gráfico com a linha o setando
         },
         pieSliceText: 'none',//Retira o valor de dentro do gráfico
     };
 
-    var chart = new google.visualization.PieChart(document.getElementById('chart_div2'));
+    var chart = new google.visualization.PieChart(document.getElementById('leadgerados'));
+    chart.draw(data, options);
+}
+
+
+
+// Grafico Leads Agendados
+
+function leadsAgendado (){
+    var data = google.visualization.arrayToDataTable([
+        ['Tipo', 'quantidade'], //Colunas
+        ['Atendidos na data',     80], // linhas
+        ['Não atendidos na data        ',    120]
+    ]);
+
+    var options = {
+        width: 520,
+        height: 310,
+        pieHole: 0.5,//Tamanho central do donut
+        legend: {
+          position: 'labeled', //coloca o valor fora do gráfico com a linha o setando
+        },
+        pieSliceText: 'none',//Retira o valor de dentro do gráfico
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('leadagendado'));
+    chart.draw(data, options);
+}
+
+
+
+// Grafico do Leads Online 
+
+function leadsOnline (){
+    var data = google.visualization.arrayToDataTable([
+        ['Tipo', 'quantidade'], //Colunas
+        ['Atendidos na data',     80], // linhas
+        ['Não atendidos na data        ',    120]
+    ]);
+
+    var options = {
+        width: 520,
+        height: 310,
+        pieHole: 0.5,//Tamanho central do donut
+        legend: {
+          position: 'labeled', //coloca o valor fora do gráfico com a linha o setando
+        },
+        pieSliceText: 'none',//Retira o valor de dentro do gráfico
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('leadonline'));
     chart.draw(data, options);
 }
 
 
 
 
-// function drawDonut(){
-//     var data = google.visualization.arrayToDataTable([
-//         ['Task', 'Hours per Day'], //Colunas
-//         ['Work',     13], // linhas
-//         ['Sleep',    11]
-//     ]);
-
-//     var options = {
-//         width: 900,
-//         height: 400,
-//         pieHole: 0.4,//Tamanho central do donut
-//         legend: {
-//           position: 'labeled', //coloca o valor fora do gráfico com a linha o setando
-//         },
-//         pieSliceText: 'none',//Retira o valor de dentro do gráfico
-//     };
-
-//     var chart = new google.visualization.PieChart(document.getElementById('chart_div2'));
-//     chart.draw(data, options);
-// }
 
 // Function utilizada para o onload da página carregar os gráficos.
 function displayCharts(){
     // Necessrário listar todos as functions 
     leadsGerados();
+    tempoMedioAtendimento();
     tempoMedioEspera();
+    leadsAgendado();
+    leadsOnline();
 }
 
 
