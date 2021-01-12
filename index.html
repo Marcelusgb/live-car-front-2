@@ -94,13 +94,13 @@
                                                     <p class="p-leads-cards">Leads</p>
                                                 </div>
                                               </div>
-                                              <div class="col-4">
+                                              <div class="col-4 col-info-cards">
                                                   <!-- botão para o modal -->
-                                                <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                                                <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
                                                     MAIS DETALHES
                                                   </button> 
                                                   <!-- botão para o modal -->
-                                                <p>Compare os leads</p>
+                                                <p class="compare-os-leads-p">Compare os leads</p>
                                               </div>
                                           </div>
                                         </div>
@@ -119,27 +119,27 @@
 
                                                 <p class="subtitulo-card">(Minutagem)</p>
                                             </div>
-                                            <div class="d-flex">
-                                                <div>
-                                                    <p>TOTAL</p>
-                                                    <p>6.220</p>
-                                                    <p>Minutos</p>
+                                            <div class="row d-flex">
+                                                <div class="col-2 ">
+                                                    <p class="p-tatal">TOTAL</p>
+                                                    <p class="p-numer-cards">6.220</p>
+                                                    <p class="p-leads-cards">Minutos</p>
                                                 </div>
-                                                <div>
-                                                    <p>HOJE</p>
-                                                    <p>2</p>
-                                                    <p>Minutos</p>
+                                                <div class="col-2 ">
+                                                    <p class="p-tatal">HOJE</p>
+                                                    <p class="p-numer-cards">2</p>
+                                                    <p class="p-leads-cards">Minutos</p>
                                                 </div>
-                                                <div>
-                                                    <p>ÚLTIMOS 7 DIAS</p>
-                                                    <p>60</p>
-                                                    <p>Minutos</p>
+                                                <div class="col-3 col-info-cards">
+                                                    <p class="p-tatal">ÚLTIMOS 7 DIAS</p>
+                                                    <p class="p-numer-cards">60</p>
+                                                    <p class="p-leads-cards">Minutos</p>
                                                 </div>
-                                                <div>
-                                                    <p>ÚLTIMOS 30 DIAS</p>
-                                                    <p>60</p>
-                                                    <p>Minutos</p>
-                                                    <p>Mês passado: 72</p>
+                                                <div class="col-4 ">
+                                                    <p class="p-tatal">ÚLTIMOS 30 DIAS</p>
+                                                    <p class="p-numer-cards">60</p>
+                                                    <p class="p-leads-cards">Minutos</p>
+                                                    <p class="p-leads-cards">Mês passado: 72</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -181,21 +181,31 @@
                                         
                                         <div class="card-body">
                                             <div class="d-flex">
-                                                <div class="d-flex">
-                                                  <div>
-                                                      <p>TEMPO TOTAL</p>
-                                                      <p>200</p>
-                                                      <p>minutos</p>
+                                                <div class="col-8 d-flex">
+                                                  <div class="col-5 col-info-cards">
+                                                        <p class="p-tatal">TEMPO TOTAL</p>
+                                                        <p class="p-numer-cards">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path class="relogio-cinza-svg" d="M19.5,8A11.5,11.5,0,1,0,31,19.5,11.5,11.5,0,0,0,19.5,8Zm0,20.774A9.274,9.274,0,1,1,28.774,19.5,9.272,9.272,0,0,1,19.5,28.774Zm2.866-4.841-3.937-2.861a.56.56,0,0,1-.227-.45V13.008a.558.558,0,0,1,.556-.556h1.484a.558.558,0,0,1,.556.556v6.571l3.1,2.254a.556.556,0,0,1,.121.779l-.872,1.2A.56.56,0,0,1,22.366,23.933Z" transform="translate(-8 -8)"/></svg>
+                                                            200
+                                                        </p>
+                                                      <p class="p-leads-cards">minutos</p>
                                                   </div>
-                                                  <div>
-                                                      <p>ATENDIDOS</p>
-                                                      <p>120</p>
-                                                      <p>Leads</p>
+                                                  <div class="col-5 col-info-cards">
+                                                        <p class="p-tatal">ATENDIDOS</p>
+                                                        <p class="p-numer-cards">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path class="relogio-azul-svg" d="M19.5,8A11.5,11.5,0,1,0,31,19.5,11.5,11.5,0,0,0,19.5,8Zm0,20.774A9.274,9.274,0,1,1,28.774,19.5,9.272,9.272,0,0,1,19.5,28.774Zm2.866-4.841-3.937-2.861a.56.56,0,0,1-.227-.45V13.008a.558.558,0,0,1,.556-.556h1.484a.558.558,0,0,1,.556.556v6.571l3.1,2.254a.556.556,0,0,1,.121.779l-.872,1.2A.56.56,0,0,1,22.366,23.933Z" transform="translate(-8 -8)"/></svg>
+                                                          120
+                                                        </p>
+                                                      <p class="p-leads-cards">minutos</p>
                                                   </div>
                                                 </div>
-                                                <div>
-                                                  <a href="">MAIS DETALHES</a>
-                                                  <p>Compare os leads das unidades</p>
+                                                <div class="col-4 col-info-cards">
+                                                    <!-- botão para o modal -->
+                                                  <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
+                                                      MAIS DETALHES
+                                                    </button> 
+                                                    <!-- botão para o modal -->
+                                                  <p class="compare-os-leads-p">Compare os leads das unidades</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -218,21 +228,31 @@
                                         </div>
                                         <div class="card-body">
                                             <div class="d-flex">
-                                                <div class="d-flex">
-                                                  <div>
-                                                      <p>TEMPO TOTAL</p>
-                                                      <p>200</p>
-                                                      <p>minutos</p>
+                                                <div class="col-8 d-flex">
+                                                  <div class="col-5 col-info-cards">
+                                                        <p class="p-tatal">TEMPO TOTAL</p>
+                                                        <p class="p-numer-cards">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path class="relogio-cinza-svg" d="M19.5,8A11.5,11.5,0,1,0,31,19.5,11.5,11.5,0,0,0,19.5,8Zm0,20.774A9.274,9.274,0,1,1,28.774,19.5,9.272,9.272,0,0,1,19.5,28.774Zm2.866-4.841-3.937-2.861a.56.56,0,0,1-.227-.45V13.008a.558.558,0,0,1,.556-.556h1.484a.558.558,0,0,1,.556.556v6.571l3.1,2.254a.556.556,0,0,1,.121.779l-.872,1.2A.56.56,0,0,1,22.366,23.933Z" transform="translate(-8 -8)"/></svg>
+                                                            200
+                                                        </p>
+                                                      <p class="p-leads-cards">minutos</p>
                                                   </div>
-                                                  <div>
-                                                      <p>ATENDIDOS</p>
-                                                      <p>120</p>
-                                                      <p>Leads</p>
+                                                  <div class="col-5 col-info-cards">
+                                                        <p class="p-tatal">TEMPO MÉDIO</p>
+                                                        <p class="p-numer-cards">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path class="relogio-azul-svg" d="M19.5,8A11.5,11.5,0,1,0,31,19.5,11.5,11.5,0,0,0,19.5,8Zm0,20.774A9.274,9.274,0,1,1,28.774,19.5,9.272,9.272,0,0,1,19.5,28.774Zm2.866-4.841-3.937-2.861a.56.56,0,0,1-.227-.45V13.008a.558.558,0,0,1,.556-.556h1.484a.558.558,0,0,1,.556.556v6.571l3.1,2.254a.556.556,0,0,1,.121.779l-.872,1.2A.56.56,0,0,1,22.366,23.933Z" transform="translate(-8 -8)"/></svg>
+                                                          120
+                                                        </p>
+                                                      <p class="p-leads-cards">minutos</p>
                                                   </div>
                                                 </div>
-                                                <div>
-                                                  <a href="">MAIS DETALHES</a>
-                                                  <p>Compare os leads das unidades</p>
+                                                <div class="col-4 col-info-cards">
+                                                    <!-- botão para o modal -->
+                                                  <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
+                                                      MAIS DETALHES
+                                                    </button> 
+                                                    <!-- botão para o modal -->
+                                                  <p class="compare-os-leads-p">Compare os leads das unidades</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -244,7 +264,7 @@
                                     <div class="card">
                                         <div class="card-header">
                                             <div class="d-flex">
-                                                <p class="titulo-card">Leads gerados</p>
+                                                <p class="titulo-card">Leads agendado</p>
                                                 <a href="#" data-toggle="tooltip" title="Some tooltip text!">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"><path class="icon-tooltip" d="M14.5,8A6.5,6.5,0,1,0,21,14.5,6.5,6.5,0,0,0,14.5,8Zm0,2.883a1.1,1.1,0,1,1-1.1,1.1A1.1,1.1,0,0,1,14.5,10.883Zm1.468,6.657a.315.315,0,0,1-.315.315H13.347a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h.315V14.919h-.315a.315.315,0,0,1-.315-.315v-.629a.315.315,0,0,1,.315-.315h1.677a.315.315,0,0,1,.315.315V16.6h.315a.315.315,0,0,1,.315.315Z" transform="translate(-8 -8)"/></svg>
                                                 </a>
@@ -257,24 +277,34 @@
                                         </div>
                                         <div class="card-body">
                                             <div class="d-flex">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <p>TOTAL</p>
-                                                        <p>200</p>
-                                                        <p>Leads</p>
+                                                <div class="d-flex col-8">
+                                                    <div class="col-3 col-info-cards">
+                                                        <p class="p-tatal">TOTAL</p>
+                                                        <p class="p-numer-cards">200</p>
+                                                        <p class="p-leads-cards">Leads</p>
                                                     </div>
-                                                    <div>
-                                                        <p>Atendidos na data</p>
-                                                        <p>Não Atendidos da data</p>
+                                                    <div class="col-7 col-info-cards">
+                                                        <p class="p-atendidos-cards">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 23 23"><path class="atendido-svg" d="M11.5,8A11.5,11.5,0,1,0,23,19.5,11.5,11.5,0,0,0,11.5,8Zm0,20.774A9.274,9.274,0,1,1,20.774,19.5,9.284,9.284,0,0,1,11.5,28.774Zm3.9-6.65a5.066,5.066,0,0,1-7.79,0,1.113,1.113,0,0,0-1.711,1.424,7.3,7.3,0,0,0,11.213,0A1.113,1.113,0,0,0,15.4,22.125ZM6.33,17.413a1.735,1.735,0,0,1,1.461-1,1.735,1.735,0,0,1,1.461,1l.441.788a.367.367,0,0,0,.431.172.372.372,0,0,0,.264-.385c-.153-1.952-1.493-3.311-2.6-3.311s-2.444,1.359-2.6,3.311a.375.375,0,0,0,.264.385.38.38,0,0,0,.431-.172Zm8.88-2.736c-1.1,0-2.444,1.359-2.6,3.311a.373.373,0,0,0,.7.213l.441-.788a1.735,1.735,0,0,1,1.461-1,1.735,1.735,0,0,1,1.461,1l.441.788a.367.367,0,0,0,.431.172.372.372,0,0,0,.264-.385C17.653,16.036,16.313,14.677,15.21,14.677Z" transform="translate(0 -8)"/></svg>
+                                                            Atendidos na data
+                                                        </p>
+                                                        <p class="p-atendidos-cards">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 23 23"><path class="nao-atendido-svg" d="M11.5,8A11.5,11.5,0,1,0,23,19.5,11.5,11.5,0,0,0,11.5,8Zm0,20.774A9.274,9.274,0,1,1,20.774,19.5,9.284,9.284,0,0,1,11.5,28.774ZM7.79,18.758a1.484,1.484,0,1,0-1.484-1.484A1.482,1.482,0,0,0,7.79,18.758ZM15.21,15.79a1.484,1.484,0,1,0,1.484,1.484A1.482,1.482,0,0,0,15.21,15.79ZM11.5,21.726a6.253,6.253,0,0,0-4.813,2.254A1.113,1.113,0,0,0,8.4,25.4a4.033,4.033,0,0,1,6.2,0,1.113,1.113,0,0,0,1.711-1.424A6.253,6.253,0,0,0,11.5,21.726Z" transform="translate(0 -8)"/></svg>
+                                                            Não Atendidos da data
+                                                        </p>
                                                     </div>
-                                                    <div>
-                                                        <p>80</p>
-                                                        <p>120</p>
+                                                    <div class="col-2 col-info-cards">
+                                                        <p class="p-atendidos-na-data">80</p>
+                                                        <p class="p-nao-atendidos-na-data">120</p>
                                                     </div>
                                                 </div>
-                                                <div>
-                                                  <a href="">MAIS DETALHES</a>
-                                                  <p>Compare os leads das unidades</p>
+                                                <div class="col-4 col-info-cards">
+                                                    <!-- botão para o modal -->
+                                                  <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
+                                                      MAIS DETALHES
+                                                    </button> 
+                                                    <!-- botão para o modal -->
+                                                  <p class="compare-os-leads-p">Compare os leads das unidades</p>
                                                 </div>
                                             </div>
                                         </div>

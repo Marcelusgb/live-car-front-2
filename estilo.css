@@ -170,8 +170,45 @@ body{
     }
     .card-body{
         padding: 20px 5px;
+        background: #F8F9FD 0% 0% no-repeat padding-box;
     }
     .col-info-cards{
         padding-left: 0px;
         padding-right: 0px;
+    }
+    .btn-mais-detalhes{
+        width: 145px;
+        height: 38px;
+        background: #22BDEE 0% 0% no-repeat padding-box;
+        border-radius: 4px;
+        font-size: 12px;
+        color: white;
+    }
+    .compare-os-leads-p{
+        color: var(--unnamed-color-8e9198);
+        font: normal normal normal 12px/15px Lato;
+    }
+    .relogio-cinza-svg{
+        fill:#8e9198;
+    }
+    .relogio-azul-svg{
+        fill:#0c84c2;
+    }
+    .card-header{
+        background-color: white;
+    }
+    .p-atendidos-cards{
+        font-size: 14px;
+        color: #5D5E61;
+    }
+    .p-atendidos-na-data{
+        font: normal normal 900 14px Lato;
+        color: #4C81F0;
+        padding-top: 5px;
+    }
+    .p-nao-atendidos-na-data{
+        font: normal normal 900 14px Lato;
+        letter-spacing: 0px;
+        color: #E33E36;
+        padding-top: 3px;
     }
