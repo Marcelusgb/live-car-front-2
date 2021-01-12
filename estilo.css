@@ -410,3 +410,27 @@ body{
         font: normal normal bold 14px Lato;
         color:#FFFFFF;
     }
+    .p-vendedor-modal-entrar{
+        font: normal normal bold 16px Lato;
+        color: #0C84C2;
+        margin-bottom: 0px;
+    }
+    .p-sub-modal-entrar{
+        color: #8E9198;
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    .modal-content-modal-entrar{
+        background: #E8EBF3 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+    }
+    .card-modal-entrar{
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border-radius: 3px;
+        margin: 10px 5px;
+        padding: 10px;
+    }
+    .radius-modal-entrar{
+        background-color: #22BDEE;
+        border-radius: 100%;
+    }
