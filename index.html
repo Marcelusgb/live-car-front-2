@@ -274,7 +274,7 @@
                                     </div>
                                     <div class="col-4 col-info-cards">
                                         <!-- botão para o modal -->
-                                        <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
+                                        <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#modal-tempo-medio-atendimento">
                                             MAIS DETALHES
                                         </button> 
                                         <!-- botão para o modal -->
@@ -319,7 +319,7 @@
                                     </div>
                                     <div class="col-4 col-info-cards">
                                         <!-- botão para o modal -->
-                                        <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
+                                        <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#modal-tempo-medio-espera">
                                             MAIS DETALHES
                                         </button> 
                                         <!-- botão para o modal -->
@@ -370,7 +370,7 @@
                                     </div>
                                     <div class="col-4 col-info-cards">
                                         <!-- botão para o modal -->
-                                        <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
+                                        <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#modal-leads-agendados">
                                             MAIS DETALHES
                                         </button> 
                                         <!-- botão para o modal -->
@@ -418,7 +418,7 @@
                                     </div>
                                     <div class="col-4 col-info-cards">
                                         <!-- botão para o modal -->
-                                        <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
+                                        <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#modal-leads-online">
                                             MAIS DETALHES
                                         </button> 
                                         <!-- botão para o modal -->
@@ -593,7 +593,7 @@
       <div class="modal-content">
         <div class="modal-header">
             <div class="d-flex">
-                <p class="titulo-card">Leads gerados</p>
+                <p class="titulo-card">Leads Gerados</p>
                 <p class="subtitulo-card-modal">(Atendimento x Não atendidos)</p>
             </div>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -713,8 +713,462 @@
       </div>
     </div>
   </div>
-  <!-- modal -->
+  
+  <!-- fim modal -->
+
+
+
+  <!-- modal Leads Agendados -->
+
+  <div class="modal fade" id="modal-leads-agendados" tabindex="-1" role="dialog" aria-labelledby="modal-leads-agendados" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <div class="d-flex">
+                <p class="titulo-card">Leads Agendados</p>
+                <p class="subtitulo-card-modal">(Atendimento x Não atendidos)</p>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+        </div>
+        <div class="modal-body">
+            <div class="row row-modal-gerados-border">
+                <div class="col-4">
+                    <p class="p-modal-categ-gerados">UNIDADES</p>
+                </div>
+                <div class="col-2">
+                    <p  class="p-modal-categ-gerados">ATENDIDOS</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-categ-gerados">NÃO ATENDIDOS</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-categ-gerados">TOTAL</p>
+                </div>
+            </div>
+            <div class="row row-modal-gerados-branco ">
+                <div class="col-4 d-flex align-items-baseline">
+                    <div class="quadrado"></div>
+                    <p class="p-modal-categ-gerados"> Carbel VW | Savassi</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-num-gerados">16</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-num-gerados">40</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-num-gerados">40</p>
+                </div>
+            </div>
+            <div class="row row-modal-gerados-cinza">
+                <div class="col-4 d-flex align-items-baseline">
+                    <div class="quadrado"></div>
+                    <p class="p-modal-categ-gerados">Carbel VW | C. Machado</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-num-gerados">160</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-num-gerados">20</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-num-gerados">60</p>
+                </div>
+            </div>
+            <div class="row row-modal-gerados-branco ">
+                <div class="col-4 d-flex align-items-baseline">
+                    <div class="quadrado"></div>
+                    <p class="p-modal-categ-gerados">Honda Banzai | Contorno</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-num-gerados">160</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-num-gerados">20</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-num-gerados">60</p>
+                </div>
+            </div>
+            <div class="row row-modal-gerados-cinza">
+                <div class="col-4 d-flex align-items-baseline">
+                    <div class="quadrado"></div>
+                    <p class="p-modal-categ-gerados">Honda Banzai | Pampulha</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-num-gerados">160</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-num-gerados">20</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-num-gerados">60</p>
+                </div>
+            </div>
+            <div class="row row-modal-gerados-azul">
+                <div class="col-4">
+                    <p class="p-modal-categ-gerados-2">TOTAL</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-num-gerados-2">160</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-num-gerados-2">20</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-num-gerados-2">60</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex">
+                    <div class="pad-6">
+                        <a href="" class="btn-seja-bem-vindo-exportar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" class="svg-exportar"><path class="exportar-xls"  d="M7,4.25V0H.75A.748.748,0,0,0,0,.75v14.5A.748.748,0,0,0,.75,16h10.5a.748.748,0,0,0,.75-.75V5H7.75A.752.752,0,0,1,7,4.25ZM4,8.75A.25.25,0,0,1,3.75,9H3.5a.5.5,0,0,0-.5.5v1a.5.5,0,0,0,.5.5h.25a.25.25,0,0,1,.25.25v.5a.25.25,0,0,1-.25.25H3.5A1.5,1.5,0,0,1,2,10.5v-1A1.5,1.5,0,0,1,3.5,8h.25A.25.25,0,0,1,4,8.25ZM5.383,12H5a.25.25,0,0,1-.25-.25v-.5A.25.25,0,0,1,5,11h.383c.186,0,.325-.109.325-.207a.165.165,0,0,0-.066-.12l-.684-.587a1.16,1.16,0,0,1-.417-.879A1.272,1.272,0,0,1,5.867,8H6.25a.25.25,0,0,1,.25.25v.5A.25.25,0,0,1,6.25,9H5.867c-.186,0-.325.109-.325.207a.165.165,0,0,0,.066.12l.684.587a1.16,1.16,0,0,1,.417.879A1.271,1.271,0,0,1,5.383,12ZM8,8.25V8.9a3.406,3.406,0,0,0,.5,1.778A3.406,3.406,0,0,0,9,8.9V8.25A.25.25,0,0,1,9.25,8h.5a.25.25,0,0,1,.25.25V8.9a4.3,4.3,0,0,1-1.134,2.94.5.5,0,0,1-.733,0A4.3,4.3,0,0,1,7,8.9V8.25A.25.25,0,0,1,7.25,8h.5A.25.25,0,0,1,8,8.25Zm3.781-4.969L8.722.219A.749.749,0,0,0,8.191,0H8V4h4V3.809A.748.748,0,0,0,11.781,3.281Z"/></svg>
+                            EXPORTAR XLS
+                        </a>
+                    </div>
+                    <div class="pad-6">
+                        <a href="" class="btn-seja-bem-vindo-exportar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" class="svg-exportar"><path class="exportar-xls" d="M5.684,8a3.015,3.015,0,0,1-.062-1.466C5.884,6.538,5.859,7.691,5.684,8ZM5.631,9.478a14.42,14.42,0,0,1-.887,1.959,11.507,11.507,0,0,1,1.966-.684A4.048,4.048,0,0,1,5.631,9.478Zm-2.941,3.9c0,.025.412-.169,1.091-1.256A4.319,4.319,0,0,0,2.691,13.378ZM7.75,5H12V15.25a.748.748,0,0,1-.75.75H.75A.748.748,0,0,1,0,15.25V.75A.748.748,0,0,1,.75,0H7V4.25A.752.752,0,0,0,7.75,5ZM7.5,10.369A3.136,3.136,0,0,1,6.166,8.688a4.492,4.492,0,0,0,.194-2.006.783.783,0,0,0-1.494-.213,5.2,5.2,0,0,0,.253,2.406,29.345,29.345,0,0,1-1.275,2.681s0,0-.006,0c-.847.434-2.3,1.391-1.7,2.125A.971.971,0,0,0,2.806,14c.559,0,1.116-.562,1.909-1.931a17.813,17.813,0,0,1,2.469-.725,4.736,4.736,0,0,0,2,.609A.809.809,0,0,0,9.8,10.594C9.366,10.169,8.1,10.291,7.5,10.369Zm4.281-7.087L8.719.219A.749.749,0,0,0,8.188,0H8V4h4V3.809A.748.748,0,0,0,11.781,3.281ZM9.466,11.259c.128-.084-.078-.372-1.337-.281C9.288,11.472,9.466,11.259,9.466,11.259Z"/></svg>
+                            EXPORTAR PDF
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- fim modal-->
+
+
+
+  <!-- Modal leads Online -->
+
+  <div class="modal fade" id="modal-leads-online" tabindex="-1" role="dialog" aria-labelledby="modal-leads-online" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <div class="d-flex">
+                <p class="titulo-card">Leads Online</p>
+                <p class="subtitulo-card-modal">(Atendimento x Não atendidos)</p>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+        </div>
+        <div class="modal-body">
+            <div class="row row-modal-gerados-border">
+                <div class="col-4">
+                    <p class="p-modal-categ-gerados">UNIDADES</p>
+                </div>
+                <div class="col-2">
+                    <p  class="p-modal-categ-gerados">ATENDIDOS</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-categ-gerados">NÃO ATENDIDOS</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-categ-gerados">TOTAL</p>
+                </div>
+            </div>
+            <div class="row row-modal-gerados-branco ">
+                <div class="col-4 d-flex align-items-baseline">
+                    <div class="quadrado"></div>
+                    <p class="p-modal-categ-gerados"> Carbel VW | Savassi</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-num-gerados">16</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-num-gerados">40</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-num-gerados">40</p>
+                </div>
+            </div>
+            <div class="row row-modal-gerados-cinza">
+                <div class="col-4 d-flex align-items-baseline">
+                    <div class="quadrado"></div>
+                    <p class="p-modal-categ-gerados">Carbel VW | C. Machado</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-num-gerados">160</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-num-gerados">20</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-num-gerados">60</p>
+                </div>
+            </div>
+            <div class="row row-modal-gerados-branco ">
+                <div class="col-4 d-flex align-items-baseline">
+                    <div class="quadrado"></div>
+                    <p class="p-modal-categ-gerados">Honda Banzai | Contorno</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-num-gerados">160</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-num-gerados">20</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-num-gerados">60</p>
+                </div>
+            </div>
+            <div class="row row-modal-gerados-cinza">
+                <div class="col-4 d-flex align-items-baseline">
+                    <div class="quadrado"></div>
+                    <p class="p-modal-categ-gerados">Honda Banzai | Pampulha</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-num-gerados">160</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-num-gerados">20</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-num-gerados">60</p>
+                </div>
+            </div>
+            <div class="row row-modal-gerados-azul">
+                <div class="col-4">
+                    <p class="p-modal-categ-gerados-2">TOTAL</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-num-gerados-2">160</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-num-gerados-2">20</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p  class="p-modal-num-gerados-2">60</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex">
+                    <div class="pad-6">
+                        <a href="" class="btn-seja-bem-vindo-exportar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" class="svg-exportar"><path class="exportar-xls"  d="M7,4.25V0H.75A.748.748,0,0,0,0,.75v14.5A.748.748,0,0,0,.75,16h10.5a.748.748,0,0,0,.75-.75V5H7.75A.752.752,0,0,1,7,4.25ZM4,8.75A.25.25,0,0,1,3.75,9H3.5a.5.5,0,0,0-.5.5v1a.5.5,0,0,0,.5.5h.25a.25.25,0,0,1,.25.25v.5a.25.25,0,0,1-.25.25H3.5A1.5,1.5,0,0,1,2,10.5v-1A1.5,1.5,0,0,1,3.5,8h.25A.25.25,0,0,1,4,8.25ZM5.383,12H5a.25.25,0,0,1-.25-.25v-.5A.25.25,0,0,1,5,11h.383c.186,0,.325-.109.325-.207a.165.165,0,0,0-.066-.12l-.684-.587a1.16,1.16,0,0,1-.417-.879A1.272,1.272,0,0,1,5.867,8H6.25a.25.25,0,0,1,.25.25v.5A.25.25,0,0,1,6.25,9H5.867c-.186,0-.325.109-.325.207a.165.165,0,0,0,.066.12l.684.587a1.16,1.16,0,0,1,.417.879A1.271,1.271,0,0,1,5.383,12ZM8,8.25V8.9a3.406,3.406,0,0,0,.5,1.778A3.406,3.406,0,0,0,9,8.9V8.25A.25.25,0,0,1,9.25,8h.5a.25.25,0,0,1,.25.25V8.9a4.3,4.3,0,0,1-1.134,2.94.5.5,0,0,1-.733,0A4.3,4.3,0,0,1,7,8.9V8.25A.25.25,0,0,1,7.25,8h.5A.25.25,0,0,1,8,8.25Zm3.781-4.969L8.722.219A.749.749,0,0,0,8.191,0H8V4h4V3.809A.748.748,0,0,0,11.781,3.281Z"/></svg>
+                            EXPORTAR XLS
+                        </a>
+                    </div>
+                    <div class="pad-6">
+                        <a href="" class="btn-seja-bem-vindo-exportar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" class="svg-exportar"><path class="exportar-xls" d="M5.684,8a3.015,3.015,0,0,1-.062-1.466C5.884,6.538,5.859,7.691,5.684,8ZM5.631,9.478a14.42,14.42,0,0,1-.887,1.959,11.507,11.507,0,0,1,1.966-.684A4.048,4.048,0,0,1,5.631,9.478Zm-2.941,3.9c0,.025.412-.169,1.091-1.256A4.319,4.319,0,0,0,2.691,13.378ZM7.75,5H12V15.25a.748.748,0,0,1-.75.75H.75A.748.748,0,0,1,0,15.25V.75A.748.748,0,0,1,.75,0H7V4.25A.752.752,0,0,0,7.75,5ZM7.5,10.369A3.136,3.136,0,0,1,6.166,8.688a4.492,4.492,0,0,0,.194-2.006.783.783,0,0,0-1.494-.213,5.2,5.2,0,0,0,.253,2.406,29.345,29.345,0,0,1-1.275,2.681s0,0-.006,0c-.847.434-2.3,1.391-1.7,2.125A.971.971,0,0,0,2.806,14c.559,0,1.116-.562,1.909-1.931a17.813,17.813,0,0,1,2.469-.725,4.736,4.736,0,0,0,2,.609A.809.809,0,0,0,9.8,10.594C9.366,10.169,8.1,10.291,7.5,10.369Zm4.281-7.087L8.719.219A.749.749,0,0,0,8.188,0H8V4h4V3.809A.748.748,0,0,0,11.781,3.281ZM9.466,11.259c.128-.084-.078-.372-1.337-.281C9.288,11.472,9.466,11.259,9.466,11.259Z"/></svg>
+                            EXPORTAR PDF
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- fim modal -->
+
+
+
+  <!-- Modal tempo medio de atendimento -->
+
+  <div class="modal fade" id="modal-tempo-medio-atendimento" tabindex="-1" role="dialog" aria-labelledby="modal-tempo-medio-atendimento" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <div class="d-flex">
+                <p class="titulo-card">Tempo médio de atendimento</p>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+        </div>
+        <div class="modal-body">
+            <div class="row row-modal-gerados-border">
+                <div class="col-8">
+                    <p class="p-modal-categ-gerados">UNIDADES</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-categ-gerados">MÉDIA</p>
+                </div>
+            </div>
+            <div class="row row-modal-gerados-branco ">
+                <div class="col-8 d-flex align-items-baseline">
+                    <div class="quadrado"></div>
+                    <p class="p-modal-categ-gerados"> Carbel VW | Savassi</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-num-gerados">16</p>
+                </div>
+            </div>
+            <div class="row row-modal-gerados-cinza">
+                <div class="col-8 d-flex align-items-baseline">
+                    <div class="quadrado"></div>
+                    <p class="p-modal-categ-gerados">Carbel VW | C. Machado</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-num-gerados">60</p>
+                </div>
+            </div>
+            <div class="row row-modal-gerados-branco ">
+                <div class="col-8 d-flex align-items-baseline">
+                    <div class="quadrado"></div>
+                    <p class="p-modal-categ-gerados">Honda Banzai | Contorno</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-num-gerados">160</p>
+                </div>
+            </div>
+            <div class="row row-modal-gerados-cinza">
+                <div class="col-8 d-flex align-items-baseline">
+                    <div class="quadrado"></div>
+                    <p class="p-modal-categ-gerados">Honda Banzai | Pampulha</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-num-gerados">60</p>
+                </div>
+            </div>
+            <div class="row row-modal-gerados-azul">
+                <div class="col-8">
+                    <p class="p-modal-categ-gerados-2">TOTAL</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-num-gerados-2">60</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex">
+                    <div class="pad-6">
+                        <a href="" class="btn-seja-bem-vindo-exportar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" class="svg-exportar"><path class="exportar-xls"  d="M7,4.25V0H.75A.748.748,0,0,0,0,.75v14.5A.748.748,0,0,0,.75,16h10.5a.748.748,0,0,0,.75-.75V5H7.75A.752.752,0,0,1,7,4.25ZM4,8.75A.25.25,0,0,1,3.75,9H3.5a.5.5,0,0,0-.5.5v1a.5.5,0,0,0,.5.5h.25a.25.25,0,0,1,.25.25v.5a.25.25,0,0,1-.25.25H3.5A1.5,1.5,0,0,1,2,10.5v-1A1.5,1.5,0,0,1,3.5,8h.25A.25.25,0,0,1,4,8.25ZM5.383,12H5a.25.25,0,0,1-.25-.25v-.5A.25.25,0,0,1,5,11h.383c.186,0,.325-.109.325-.207a.165.165,0,0,0-.066-.12l-.684-.587a1.16,1.16,0,0,1-.417-.879A1.272,1.272,0,0,1,5.867,8H6.25a.25.25,0,0,1,.25.25v.5A.25.25,0,0,1,6.25,9H5.867c-.186,0-.325.109-.325.207a.165.165,0,0,0,.066.12l.684.587a1.16,1.16,0,0,1,.417.879A1.271,1.271,0,0,1,5.383,12ZM8,8.25V8.9a3.406,3.406,0,0,0,.5,1.778A3.406,3.406,0,0,0,9,8.9V8.25A.25.25,0,0,1,9.25,8h.5a.25.25,0,0,1,.25.25V8.9a4.3,4.3,0,0,1-1.134,2.94.5.5,0,0,1-.733,0A4.3,4.3,0,0,1,7,8.9V8.25A.25.25,0,0,1,7.25,8h.5A.25.25,0,0,1,8,8.25Zm3.781-4.969L8.722.219A.749.749,0,0,0,8.191,0H8V4h4V3.809A.748.748,0,0,0,11.781,3.281Z"/></svg>
+                            EXPORTAR XLS
+                        </a>
+                    </div>
+                    <div class="pad-6">
+                        <a href="" class="btn-seja-bem-vindo-exportar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" class="svg-exportar"><path class="exportar-xls" d="M5.684,8a3.015,3.015,0,0,1-.062-1.466C5.884,6.538,5.859,7.691,5.684,8ZM5.631,9.478a14.42,14.42,0,0,1-.887,1.959,11.507,11.507,0,0,1,1.966-.684A4.048,4.048,0,0,1,5.631,9.478Zm-2.941,3.9c0,.025.412-.169,1.091-1.256A4.319,4.319,0,0,0,2.691,13.378ZM7.75,5H12V15.25a.748.748,0,0,1-.75.75H.75A.748.748,0,0,1,0,15.25V.75A.748.748,0,0,1,.75,0H7V4.25A.752.752,0,0,0,7.75,5ZM7.5,10.369A3.136,3.136,0,0,1,6.166,8.688a4.492,4.492,0,0,0,.194-2.006.783.783,0,0,0-1.494-.213,5.2,5.2,0,0,0,.253,2.406,29.345,29.345,0,0,1-1.275,2.681s0,0-.006,0c-.847.434-2.3,1.391-1.7,2.125A.971.971,0,0,0,2.806,14c.559,0,1.116-.562,1.909-1.931a17.813,17.813,0,0,1,2.469-.725,4.736,4.736,0,0,0,2,.609A.809.809,0,0,0,9.8,10.594C9.366,10.169,8.1,10.291,7.5,10.369Zm4.281-7.087L8.719.219A.749.749,0,0,0,8.188,0H8V4h4V3.809A.748.748,0,0,0,11.781,3.281ZM9.466,11.259c.128-.084-.078-.372-1.337-.281C9.288,11.472,9.466,11.259,9.466,11.259Z"/></svg>
+                            EXPORTAR PDF
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- fim modal -->
     
+
+  <!-- Modal tempo medio de espera -->
+
+  <div class="modal fade" id="modal-tempo-medio-espera" tabindex="-1" role="dialog" aria-labelledby="modal-tempo-medio-espera" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <div class="d-flex">
+                <p class="titulo-card">Tempo médio de espera</p>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+        </div>
+        <div class="modal-body">
+            <div class="row row-modal-gerados-border">
+                <div class="col-8">
+                    <p class="p-modal-categ-gerados">UNIDADES</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-categ-gerados">MÉDIA</p>
+                </div>
+            </div>
+            <div class="row row-modal-gerados-branco ">
+                <div class="col-8 d-flex align-items-baseline">
+                    <div class="quadrado"></div>
+                    <p class="p-modal-categ-gerados"> Carbel VW | Savassi</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-num-gerados">16</p>
+                </div>
+            </div>
+            <div class="row row-modal-gerados-cinza">
+                <div class="col-8 d-flex align-items-baseline">
+                    <div class="quadrado"></div>
+                    <p class="p-modal-categ-gerados">Carbel VW | C. Machado</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-num-gerados">60</p>
+                </div>
+            </div>
+            <div class="row row-modal-gerados-branco ">
+                <div class="col-8 d-flex align-items-baseline">
+                    <div class="quadrado"></div>
+                    <p class="p-modal-categ-gerados">Honda Banzai | Contorno</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-num-gerados">160</p>
+                </div>
+            </div>
+            <div class="row row-modal-gerados-cinza">
+                <div class="col-8 d-flex align-items-baseline">
+                    <div class="quadrado"></div>
+                    <p class="p-modal-categ-gerados">Honda Banzai | Pampulha</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-num-gerados">60</p>
+                </div>
+            </div>
+            <div class="row row-modal-gerados-azul">
+                <div class="col-8">
+                    <p class="p-modal-categ-gerados-2">TOTAL</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p  class="p-modal-num-gerados-2">60</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex">
+                    <div class="pad-6">
+                        <a href="" class="btn-seja-bem-vindo-exportar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" class="svg-exportar"><path class="exportar-xls"  d="M7,4.25V0H.75A.748.748,0,0,0,0,.75v14.5A.748.748,0,0,0,.75,16h10.5a.748.748,0,0,0,.75-.75V5H7.75A.752.752,0,0,1,7,4.25ZM4,8.75A.25.25,0,0,1,3.75,9H3.5a.5.5,0,0,0-.5.5v1a.5.5,0,0,0,.5.5h.25a.25.25,0,0,1,.25.25v.5a.25.25,0,0,1-.25.25H3.5A1.5,1.5,0,0,1,2,10.5v-1A1.5,1.5,0,0,1,3.5,8h.25A.25.25,0,0,1,4,8.25ZM5.383,12H5a.25.25,0,0,1-.25-.25v-.5A.25.25,0,0,1,5,11h.383c.186,0,.325-.109.325-.207a.165.165,0,0,0-.066-.12l-.684-.587a1.16,1.16,0,0,1-.417-.879A1.272,1.272,0,0,1,5.867,8H6.25a.25.25,0,0,1,.25.25v.5A.25.25,0,0,1,6.25,9H5.867c-.186,0-.325.109-.325.207a.165.165,0,0,0,.066.12l.684.587a1.16,1.16,0,0,1,.417.879A1.271,1.271,0,0,1,5.383,12ZM8,8.25V8.9a3.406,3.406,0,0,0,.5,1.778A3.406,3.406,0,0,0,9,8.9V8.25A.25.25,0,0,1,9.25,8h.5a.25.25,0,0,1,.25.25V8.9a4.3,4.3,0,0,1-1.134,2.94.5.5,0,0,1-.733,0A4.3,4.3,0,0,1,7,8.9V8.25A.25.25,0,0,1,7.25,8h.5A.25.25,0,0,1,8,8.25Zm3.781-4.969L8.722.219A.749.749,0,0,0,8.191,0H8V4h4V3.809A.748.748,0,0,0,11.781,3.281Z"/></svg>
+                            EXPORTAR XLS
+                        </a>
+                    </div>
+                    <div class="pad-6">
+                        <a href="" class="btn-seja-bem-vindo-exportar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" class="svg-exportar"><path class="exportar-xls" d="M5.684,8a3.015,3.015,0,0,1-.062-1.466C5.884,6.538,5.859,7.691,5.684,8ZM5.631,9.478a14.42,14.42,0,0,1-.887,1.959,11.507,11.507,0,0,1,1.966-.684A4.048,4.048,0,0,1,5.631,9.478Zm-2.941,3.9c0,.025.412-.169,1.091-1.256A4.319,4.319,0,0,0,2.691,13.378ZM7.75,5H12V15.25a.748.748,0,0,1-.75.75H.75A.748.748,0,0,1,0,15.25V.75A.748.748,0,0,1,.75,0H7V4.25A.752.752,0,0,0,7.75,5ZM7.5,10.369A3.136,3.136,0,0,1,6.166,8.688a4.492,4.492,0,0,0,.194-2.006.783.783,0,0,0-1.494-.213,5.2,5.2,0,0,0,.253,2.406,29.345,29.345,0,0,1-1.275,2.681s0,0-.006,0c-.847.434-2.3,1.391-1.7,2.125A.971.971,0,0,0,2.806,14c.559,0,1.116-.562,1.909-1.931a17.813,17.813,0,0,1,2.469-.725,4.736,4.736,0,0,0,2,.609A.809.809,0,0,0,9.8,10.594C9.366,10.169,8.1,10.291,7.5,10.369Zm4.281-7.087L8.719.219A.749.749,0,0,0,8.188,0H8V4h4V3.809A.748.748,0,0,0,11.781,3.281ZM9.466,11.259c.128-.084-.078-.372-1.337-.281C9.288,11.472,9.466,11.259,9.466,11.259Z"/></svg>
+                            EXPORTAR PDF
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- fim modal -->
 
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
