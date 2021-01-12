@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -14,9 +14,6 @@
   </head>
   <body>
     <h1 style="margin-bottom:50px;">Dashboard</h1>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item nav-item-lado-esquerdo" role="presentation">
                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#painel" role="tab" aria-controls="painel" aria-selected="true">Painel</a>
@@ -53,7 +50,7 @@
                             <div style="background: #4E6C86 0% 0% no-repeat padding-box;height: 50px;">
 
                             </div>
-                        <div class="container container-cards">
+                        <div class="container-cards">
                             <div class="row">
                                 <div class="col-6">
                                     <div class="card">
@@ -137,26 +134,112 @@
                                                 </div>
                                                 <div class="col-4 ">
                                                     <p class="p-tatal">ÚLTIMOS 30 DIAS</p>
-                                                    <p class="p-numer-cards">60</p>
+                                                    <p class="p-numer-cards-duracao">60</p>
                                                     <p class="p-leads-cards">Minutos</p>
                                                     <p class="p-leads-cards">Mês passado: 72</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card-body">
-                                            <p class="titulo-card">Chamadas acima de 10 minutos:</p>
-                                            <div>
-                                                <div class="d-flex">
-                                                    <span></span>
-                                                    <p>Nome da           Sala</p>
-                                                    <p>00:12:00</p>
-                                                    <p>Alexandre Magalhães</p>
-                                                    <p>(3)</p>
-                                                    <a href="">ENTRAR NA SALA</a>
+                                        <div class="card-body body-chamada-10-min">
+                                            <p class="titulo-card-2">Chamadas acima de 10 minutos:</p>
+                                            <div class="col-12 d-flex align-items-baseline card-chamadas-10-min">
+                                                <div class="col-1 col-chamada">
+                                                    <a href="" class="chamada-em-andamento">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path class="chamada-em-andamento-svg" d="M16.5,8A8.5,8.5,0,1,0,25,16.5,8.5,8.5,0,0,0,16.5,8Zm3.966,9.323-6.032,3.462a.824.824,0,0,1-1.224-.72V12.935a.825.825,0,0,1,1.224-.72l6.032,3.667A.825.825,0,0,1,20.466,17.323Z" transform="translate(-8 -8)"/></svg>
+                                                    </a>
+                                                </div>
+                                                <div class="col-2 col-info-cards">
+                                                    <p class="p-nome-da-sala">Nome da Sala</p>
+                                                </div>
+                                                <div class="col-2 col-info-cards">
+                                                    <p class="p-duracao-chamada">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 23 23"><path class="relogio-azul-svg" d="M19.5,8A11.5,11.5,0,1,0,31,19.5,11.5,11.5,0,0,0,19.5,8Zm0,20.774A9.274,9.274,0,1,1,28.774,19.5,9.272,9.272,0,0,1,19.5,28.774Zm2.866-4.841-3.937-2.861a.56.56,0,0,1-.227-.45V13.008a.558.558,0,0,1,.556-.556h1.484a.558.558,0,0,1,.556.556v6.571l3.1,2.254a.556.556,0,0,1,.121.779l-.872,1.2A.56.56,0,0,1,22.366,23.933Z" transform="translate(-8 -8)"/></svg>
+                                                        00:12:00
+                                                    </p>
+                                                </div>
+                                                <div class="col-3 col-info-cards">
+                                                    <p class="p-nome-pessoa-chamada">Alexandre Magalhães</p>
+                                                </div>
+                                                <div class="col-1 col-info-cards">
+                                                    <p class="p-numero-pesssoas-chamda">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24.286 17"><path class="pessoas-ativas-svg" d="M3.643,39.286a2.429,2.429,0,1,0-2.429-2.429A2.431,2.431,0,0,0,3.643,39.286Zm17,0a2.429,2.429,0,1,0-2.429-2.429A2.431,2.431,0,0,0,20.643,39.286ZM21.857,40.5H19.429a2.421,2.421,0,0,0-1.711.706,5.551,5.551,0,0,1,2.85,4.151h2.5a1.213,1.213,0,0,0,1.214-1.214V42.929A2.431,2.431,0,0,0,21.857,40.5Zm-9.714,0a4.25,4.25,0,1,0-4.25-4.25A4.248,4.248,0,0,0,12.143,40.5Zm2.914,1.214h-.315a5.868,5.868,0,0,1-5.2,0H9.229a4.373,4.373,0,0,0-4.371,4.371v1.093A1.822,1.822,0,0,0,6.679,49H17.607a1.822,1.822,0,0,0,1.821-1.821V46.086A4.373,4.373,0,0,0,15.057,41.714Zm-8.489-.508A2.421,2.421,0,0,0,4.857,40.5H2.429A2.431,2.431,0,0,0,0,42.929v1.214a1.213,1.213,0,0,0,1.214,1.214h2.5a5.565,5.565,0,0,1,2.854-4.151Z" transform="translate(0 -32)"/></svg>
+                                                        (3)
+                                                    </p>
+                                                </div>
+                                                <div class="col-3 col-info-cards">
+                                                    <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="14" viewBox="0 0 17.5 14"><path class="entrar-na-sala-svg" d="M17.063,12.251H14.875V3.1a1.334,1.334,0,0,0-1.313-1.352H10.5V3.5h2.625V14h3.938a.437.437,0,0,0,.438-.438v-.875A.437.437,0,0,0,17.063,12.251ZM8.538.029l-5.25,1.36a.9.9,0,0,0-.663.88v9.983H.438A.437.437,0,0,0,0,12.688v.875A.437.437,0,0,0,.438,14H9.625V.908A.882.882,0,0,0,8.538.029ZM7.219,7.876c-.362,0-.656-.392-.656-.875s.294-.875.656-.875.656.392.656.875S7.581,7.876,7.219,7.876Z" transform="translate(0 -0.001)"/></svg>
+                                                        ENTRAR NA SALA
+                                                      </button>
                                                 </div>
                                             </div>
-                                            <div>
-                                                <a href="">VEJA TODAS</a>
+                                            <div class="col-12 d-flex align-items-baseline card-chamadas-10-min">
+                                                <div class="col-1 col-chamada">
+                                                    <a href="" class="chamada-em-espera">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12.75" height="17" viewBox="0 0 12.75 17"><path class="chamada-em-espera-svg" d="M11.953,0H.8A.8.8,0,0,0,0,.8v.531a.8.8,0,0,0,.8.8A6.589,6.589,0,0,0,4.809,8.5,6.589,6.589,0,0,0,.8,14.875a.8.8,0,0,0-.8.8V16.2a.8.8,0,0,0,.8.8H11.953a.8.8,0,0,0,.8-.8v-.531a.8.8,0,0,0-.8-.8A6.589,6.589,0,0,0,7.941,8.5a6.589,6.589,0,0,0,4.012-6.375.8.8,0,0,0,.8-.8V.8A.8.8,0,0,0,11.953,0ZM9.828,14.875H2.922c0-2.572,1.534-4.781,3.453-4.781S9.828,12.3,9.828,14.875Z"/></svg>
+                                                    </a>
+                                                </div>
+                                                <div class="col-2 col-info-cards">
+                                                    <p class="p-nome-da-sala">Nome da Sala</p>
+                                                </div>
+                                                <div class="col-2 col-info-cards">
+                                                    <p class="p-duracao-chamada">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 23 23"><path class="relogio-azul-svg" d="M19.5,8A11.5,11.5,0,1,0,31,19.5,11.5,11.5,0,0,0,19.5,8Zm0,20.774A9.274,9.274,0,1,1,28.774,19.5,9.272,9.272,0,0,1,19.5,28.774Zm2.866-4.841-3.937-2.861a.56.56,0,0,1-.227-.45V13.008a.558.558,0,0,1,.556-.556h1.484a.558.558,0,0,1,.556.556v6.571l3.1,2.254a.556.556,0,0,1,.121.779l-.872,1.2A.56.56,0,0,1,22.366,23.933Z" transform="translate(-8 -8)"/></svg>
+                                                        00:12:00
+                                                    </p>
+                                                </div>
+                                                <div class="col-3 col-info-cards">
+                                                    <p class="p-nome-pessoa-chamada">Alexandre Magalhães</p>
+                                                </div>
+                                                <div class="col-1 col-info-cards">
+                                                    <p class="p-numero-pessoas-em-espera">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24.286 17"><path class="pessoas-em-espera-svg" d="M3.643,39.286a2.429,2.429,0,1,0-2.429-2.429A2.431,2.431,0,0,0,3.643,39.286Zm17,0a2.429,2.429,0,1,0-2.429-2.429A2.431,2.431,0,0,0,20.643,39.286ZM21.857,40.5H19.429a2.421,2.421,0,0,0-1.711.706,5.551,5.551,0,0,1,2.85,4.151h2.5a1.213,1.213,0,0,0,1.214-1.214V42.929A2.431,2.431,0,0,0,21.857,40.5Zm-9.714,0a4.25,4.25,0,1,0-4.25-4.25A4.248,4.248,0,0,0,12.143,40.5Zm2.914,1.214h-.315a5.868,5.868,0,0,1-5.2,0H9.229a4.373,4.373,0,0,0-4.371,4.371v1.093A1.822,1.822,0,0,0,6.679,49H17.607a1.822,1.822,0,0,0,1.821-1.821V46.086A4.373,4.373,0,0,0,15.057,41.714Zm-8.489-.508A2.421,2.421,0,0,0,4.857,40.5H2.429A2.431,2.431,0,0,0,0,42.929v1.214a1.213,1.213,0,0,0,1.214,1.214h2.5a5.565,5.565,0,0,1,2.854-4.151Z" transform="translate(0 -32)"/></svg>
+                                                        (3)
+                                                    </p>
+                                                </div>
+                                                <div class="col-3 col-info-cards">
+                                                    <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="14" viewBox="0 0 17.5 14"><path class="entrar-na-sala-svg" d="M17.063,12.251H14.875V3.1a1.334,1.334,0,0,0-1.313-1.352H10.5V3.5h2.625V14h3.938a.437.437,0,0,0,.438-.438v-.875A.437.437,0,0,0,17.063,12.251ZM8.538.029l-5.25,1.36a.9.9,0,0,0-.663.88v9.983H.438A.437.437,0,0,0,0,12.688v.875A.437.437,0,0,0,.438,14H9.625V.908A.882.882,0,0,0,8.538.029ZM7.219,7.876c-.362,0-.656-.392-.656-.875s.294-.875.656-.875.656.392.656.875S7.581,7.876,7.219,7.876Z" transform="translate(0 -0.001)"/></svg>
+                                                        ENTRAR NA SALA
+                                                      </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 d-flex align-items-baseline card-chamadas-10-min">
+                                                <div class="col-1 col-chamada">
+                                                    <a href="" class="ninguem-na-sala">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path class="ninguem-na-sala-stop-svg" d="M16.5,8A8.5,8.5,0,1,0,25,16.5,8.5,8.5,0,0,0,16.5,8Zm3.29,11.242a.55.55,0,0,1-.548.548H13.758a.55.55,0,0,1-.548-.548V13.758a.55.55,0,0,1,.548-.548h5.484a.55.55,0,0,1,.548.548Z" transform="translate(-8 -8)"/></svg></svg>
+                                                    </a>
+                                                </div>
+                                                <div class="col-2 col-info-cards">
+                                                    <p class="p-nome-da-sala">Nome da Sala</p>
+                                                </div>
+                                                <div class="col-2 col-info-cards">
+                                                    <p class="p-duracao-chamada">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 23 23"><path class="relogio-azul-svg" d="M19.5,8A11.5,11.5,0,1,0,31,19.5,11.5,11.5,0,0,0,19.5,8Zm0,20.774A9.274,9.274,0,1,1,28.774,19.5,9.272,9.272,0,0,1,19.5,28.774Zm2.866-4.841-3.937-2.861a.56.56,0,0,1-.227-.45V13.008a.558.558,0,0,1,.556-.556h1.484a.558.558,0,0,1,.556.556v6.571l3.1,2.254a.556.556,0,0,1,.121.779l-.872,1.2A.56.56,0,0,1,22.366,23.933Z" transform="translate(-8 -8)"/></svg>
+                                                        00:12:00
+                                                    </p>
+                                                </div>
+                                                <div class="col-3 col-info-cards">
+                                                    <p class="p-nome-pessoa-chamada">Alexandre Magalhães</p>
+                                                </div>
+                                                <div class="col-1 col-info-cards">
+                                                    <p class="p-numero-pessoas-ninguem-na-sala">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24.286 17"><path class="ninguem-na-sala-svg" d="M3.643,39.286a2.429,2.429,0,1,0-2.429-2.429A2.431,2.431,0,0,0,3.643,39.286Zm17,0a2.429,2.429,0,1,0-2.429-2.429A2.431,2.431,0,0,0,20.643,39.286ZM21.857,40.5H19.429a2.421,2.421,0,0,0-1.711.706,5.551,5.551,0,0,1,2.85,4.151h2.5a1.213,1.213,0,0,0,1.214-1.214V42.929A2.431,2.431,0,0,0,21.857,40.5Zm-9.714,0a4.25,4.25,0,1,0-4.25-4.25A4.248,4.248,0,0,0,12.143,40.5Zm2.914,1.214h-.315a5.868,5.868,0,0,1-5.2,0H9.229a4.373,4.373,0,0,0-4.371,4.371v1.093A1.822,1.822,0,0,0,6.679,49H17.607a1.822,1.822,0,0,0,1.821-1.821V46.086A4.373,4.373,0,0,0,15.057,41.714Zm-8.489-.508A2.421,2.421,0,0,0,4.857,40.5H2.429A2.431,2.431,0,0,0,0,42.929v1.214a1.213,1.213,0,0,0,1.214,1.214h2.5a5.565,5.565,0,0,1,2.854-4.151Z" transform="translate(0 -32)"/></svg>
+                                                        (3)
+                                                    </p>
+                                                </div>
+                                                <div class="col-3 col-info-cards">
+                                                    <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="14" viewBox="0 0 17.5 14"><path class="entrar-na-sala-svg" d="M17.063,12.251H14.875V3.1a1.334,1.334,0,0,0-1.313-1.352H10.5V3.5h2.625V14h3.938a.437.437,0,0,0,.438-.438v-.875A.437.437,0,0,0,17.063,12.251ZM8.538.029l-5.25,1.36a.9.9,0,0,0-.663.88v9.983H.438A.437.437,0,0,0,0,12.688v.875A.437.437,0,0,0,.438,14H9.625V.908A.882.882,0,0,0,8.538.029ZM7.219,7.876c-.362,0-.656-.392-.656-.875s.294-.875.656-.875.656.392.656.875S7.581,7.876,7.219,7.876Z" transform="translate(0 -0.001)"/></svg>
+                                                        ENTRAR NA SALA
+                                                      </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 text-right">
+                                                <a href="" class="btn-veja-todas">
+                                                    VEJA TODAS
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15.39" height="15" viewBox="0 0 15.39 15"><path class="seta-direita-svg" d="M6.543,38.655l.763-.763a.821.821,0,0,1,1.164,0l6.677,6.674a.821.821,0,0,1,0,1.164L8.47,52.408a.821.821,0,0,1-1.164,0l-.763-.763a.825.825,0,0,1,.014-1.178L10.7,46.524H.824A.822.822,0,0,1,0,45.7V44.6a.822.822,0,0,1,.824-.824H10.7L6.557,39.833A.819.819,0,0,1,6.543,38.655Z" transform="translate(0 -37.65)"/></svg>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -326,24 +409,34 @@
                                         </div>
                                         <div class="card-body">
                                             <div class="d-flex">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <p>TOTAL</p>
-                                                        <p>200</p>
-                                                        <p>Leads</p>
+                                                <div class="d-flex col-8">
+                                                    <div class="col-3 col-info-cards">
+                                                        <p class="p-tatal">TOTAL</p>
+                                                        <p class="p-numer-cards">200</p>
+                                                        <p class="p-leads-cards">Leads</p>
                                                     </div>
-                                                    <div>
-                                                        <p>Atendidos na data</p>
-                                                        <p>Não Atendidos da data</p>
+                                                    <div class="col-7 col-info-cards">
+                                                        <p class="p-atendidos-cards">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 23 23"><path class="atendido-svg" d="M11.5,8A11.5,11.5,0,1,0,23,19.5,11.5,11.5,0,0,0,11.5,8Zm0,20.774A9.274,9.274,0,1,1,20.774,19.5,9.284,9.284,0,0,1,11.5,28.774Zm3.9-6.65a5.066,5.066,0,0,1-7.79,0,1.113,1.113,0,0,0-1.711,1.424,7.3,7.3,0,0,0,11.213,0A1.113,1.113,0,0,0,15.4,22.125ZM6.33,17.413a1.735,1.735,0,0,1,1.461-1,1.735,1.735,0,0,1,1.461,1l.441.788a.367.367,0,0,0,.431.172.372.372,0,0,0,.264-.385c-.153-1.952-1.493-3.311-2.6-3.311s-2.444,1.359-2.6,3.311a.375.375,0,0,0,.264.385.38.38,0,0,0,.431-.172Zm8.88-2.736c-1.1,0-2.444,1.359-2.6,3.311a.373.373,0,0,0,.7.213l.441-.788a1.735,1.735,0,0,1,1.461-1,1.735,1.735,0,0,1,1.461,1l.441.788a.367.367,0,0,0,.431.172.372.372,0,0,0,.264-.385C17.653,16.036,16.313,14.677,15.21,14.677Z" transform="translate(0 -8)"/></svg>
+                                                            Atendidos na data
+                                                        </p>
+                                                        <p class="p-atendidos-cards">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 23 23"><path class="nao-atendido-svg" d="M11.5,8A11.5,11.5,0,1,0,23,19.5,11.5,11.5,0,0,0,11.5,8Zm0,20.774A9.274,9.274,0,1,1,20.774,19.5,9.284,9.284,0,0,1,11.5,28.774ZM7.79,18.758a1.484,1.484,0,1,0-1.484-1.484A1.482,1.482,0,0,0,7.79,18.758ZM15.21,15.79a1.484,1.484,0,1,0,1.484,1.484A1.482,1.482,0,0,0,15.21,15.79ZM11.5,21.726a6.253,6.253,0,0,0-4.813,2.254A1.113,1.113,0,0,0,8.4,25.4a4.033,4.033,0,0,1,6.2,0,1.113,1.113,0,0,0,1.711-1.424A6.253,6.253,0,0,0,11.5,21.726Z" transform="translate(0 -8)"/></svg>
+                                                            Não Atendidos da data
+                                                        </p>
                                                     </div>
-                                                    <div>
-                                                        <p>80</p>
-                                                        <p>120</p>
+                                                    <div class="col-2 col-info-cards">
+                                                        <p class="p-atendidos-na-data">80</p>
+                                                        <p class="p-nao-atendidos-na-data">120</p>
                                                     </div>
                                                 </div>
-                                                <div>
-                                                  <a href="">MAIS DETALHES</a>
-                                                  <p>Compare os leads das unidades</p>
+                                                <div class="col-4 col-info-cards">
+                                                    <!-- botão para o modal -->
+                                                  <button type="button" class="btn btn-mais-detalhes" data-toggle="modal" data-target="#exampleModal">
+                                                      MAIS DETALHES
+                                                    </button> 
+                                                    <!-- botão para o modal -->
+                                                  <p class="compare-os-leads-p">Compare os leads das unidades</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -382,10 +475,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                
     
   
   <!-- Modal -->

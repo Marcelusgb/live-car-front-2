@@ -119,6 +119,7 @@ body{
   .container-cards{
     background: #E8EBF3;
     padding-top: 30px;
+    padding: 15px;
   }
   .svg-exportar{
       margin: 5px;
@@ -211,4 +212,113 @@ body{
         letter-spacing: 0px;
         color: #E33E36;
         padding-top: 3px;
+    }
+    .p-numer-cards-duracao{
+        font: normal normal 900 20px Lato;
+        color: #18AE3B;
+    }
+    .card{
+        margin: 15px 0px;
+    }
+    .titulo-card-2{
+        font: normal normal bold 18px Lato;
+        color: var(--unnamed-color-5d5e61);
+    }
+    .p-nome-da-sala{
+        text-align: left;
+        font: normal normal bold 14px/17px Lato;
+        letter-spacing: 0px;
+        color: #5D5E61;
+    }
+    .p-duracao-chamada{
+        text-align: left;
+        font: normal normal normal 14px Lato;
+        color: #5D5E61;
+    }
+    .p-nome-pessoa-chamada{
+        font: normal normal normal 14px/17px Lato;
+        color: #5D5E61;
+        padding-left: 10px;
+    }
+    .p-numero-pesssoas-chamda{
+        font: normal normal normal 14px Lato;
+        color: #19B43D;
+    }
+    .pessoas-ativas-svg{
+        fill:#19b43d;
+    }
+    .entrar-na-sala-svg{
+        fill: white;
+    }
+    .card-chamadas-10-min{
+        background: #FFFFFF;
+        box-shadow: 0px 1px 2px #00000029;
+        border-radius: 6px;
+        padding: 4px 0px;
+        margin: 10px 0px 10px 0px;
+    }
+    .chamada-em-andamento{
+        background: #19B43D;
+        border-radius: 6px 0px 0px 6px;
+        padding: 14px 7px 24px 5px;
+        margin: 0px;
+        display: flex;
+    }
+    .chamada-em-andamento-svg{
+        fill:#fff;
+        opacity:0.6;
+    }
+    .col-chamada{
+        margin: 0px 0px -4px -11px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .body-chamada-10-min{
+        padding: 20px 20px;
+    }
+    .pessoas-em-espera-svg{
+        fill:#FFAA00;
+    }
+    .p-numero-pessoas-em-espera{
+        color: #FFAA00;
+        font: normal normal normal 14px Lato;
+    }
+    .chamada-em-espera-svg{
+        fill:#fff;
+        opacity:0.5;
+    }
+    .chamada-em-espera{
+        background:#FFAA00;
+        border-radius: 6px 0px 0px 6px;
+        padding: 14px 6px 25px 9px;
+        margin: 0px;
+        display: flex;
+    }
+    .p-numero-pessoas-ninguem-na-sala{
+        color: #8E9198;
+        font: normal normal normal 14px Lato;
+    }
+    .ninguem-na-sala-svg{
+        fill: #8E9198;
+    }
+    .ninguem-na-sala-stop-svg{
+        fill:#fff;
+        opacity:0.5;
+    }
+    .ninguem-na-sala{
+        background:#8E9198;
+        border-radius: 6px 0px 0px 6px;
+        padding: 16px 6px 25px 6px;
+        margin: 0px;
+        display: flex;
+    }
+    .btn-veja-todas{
+        font: normal normal bold 12px/15px Lato;
+        letter-spacing: 0px;
+        color: #2A3E51;
+        text-transform: uppercase;
+    }
+    .seta-direita-svg{
+        fill:#22bdee;
     }
