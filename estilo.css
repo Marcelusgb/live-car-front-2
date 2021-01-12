@@ -104,7 +104,7 @@ body{
     transition:   linear 0.3s;
     }
   .row-seja-ben-vindo{
-      padding: 20px 0;
+      padding: 20px 15px;
       background-color: #F8F9FD;
   }
   .p-seja-bem-vindo{
@@ -232,6 +232,7 @@ body{
         font: normal normal bold 14px/17px Lato;
         letter-spacing: 0px;
         color: #5D5E61;
+        padding-left: 5px;
     }
     .p-duracao-chamada{
         text-align: left;
@@ -257,7 +258,7 @@ body{
         background: #FFFFFF;
         box-shadow: 0px 1px 2px #00000029;
         border-radius: 6px;
-        padding: 4px 0px;
+        padding: 0px 0px;
         margin: 10px 0px 10px 0px;
     }
     .chamada-em-andamento{
@@ -324,4 +325,31 @@ body{
     }
     .seta-direita-svg{
         fill:#22bdee;
+    }
+    .container-cards-salas {
+        background: #E8EBF3;
+        padding: 30px 30px;
+    }
+    .card-salas {
+        background: #FFFFFF;
+        box-shadow: 0px 1px 2px #00000029;
+        border-radius: 6px;
+        padding: 0px 0px;
+        margin: 5px 0px 5px 0px;
+    }
+    .car-svg{
+        fill:#0c84c2;
+    }
+    .telefone-svg{
+        fill:#0c84c2;
+    }
+    .modal-header{
+        border-bottom: 0px;
+    }
+    .modal-body{
+        padding-top: 0px;
+    }
+    .subtitulo-card-modal{
+        font: normal normal normal 18px Lato;
+        color: var(--unnamed-color-8e9198);
     }

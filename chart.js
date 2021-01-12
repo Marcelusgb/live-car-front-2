@@ -75,7 +75,7 @@ function leadsGerados (){
 
     var options = {
         width: 520,
-        height: 310,
+        height: 300,
         pieHole: 0.5,//Tamanho central do donut
         legend: {
           position: 'labeled', //coloca o valor fora do gráfico com a linha o setando
