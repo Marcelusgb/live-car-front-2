@@ -434,3 +434,155 @@ body{
         background-color: #22BDEE;
         border-radius: 100%;
     }
+    .row-sala-geral{
+        padding: 30px 11px;
+        border-bottom: 1px solid #D4D7DF;
+        background: #F8F9FD;
+    }
+    .p-id-sala{
+        font: normal normal normal 12px/15px Lato;
+        letter-spacing: 0px;
+        color: #5D5E61;
+        padding-right: 5px;
+    }
+    .p-num-id-sala{
+        font: normal normal bold 16px/19px Lato;
+        letter-spacing: 0px;
+        color: #0C84C2;
+    }
+    .status-em-andamento{
+        background: #19B43D 0% 0% no-repeat padding-box;
+        border-radius: 6px;
+        padding: 15px 20px;
+    }
+    .p-status{
+        font: normal normal normal 12px/15px Lato;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+    }
+    .em-andamento-sala{
+        background: #169C35 0% 0% no-repeat padding-box;
+        border-radius: 6px;
+        padding: 6px;
+    }
+    .p-em-andamento-sala{
+        font: normal normal bold 16px/19px Lato;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        margin-bottom: 0px;
+        padding-left: 5px;
+    }
+    .p-usuario-status-sala{
+        font: normal normal normal 12px/15px Lato;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        margin-bottom: 0px;
+        padding-top: 10px;
+    }
+    .tempo-decorrido-sala{
+        background: #0C84C2 0% 0% no-repeat padding-box;
+        border-radius: 6px;
+        margin-left: 25px;
+        padding: 20px 20px;
+    }
+    .p-tempo-decorrido{
+        font: normal normal bold 28px Lato;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        margin-bottom: 0px;
+        padding-left: 5px;
+    }
+    .row-nome-salas{
+        padding: 35px 10px;
+        box-shadow: 0px 2px 6px #00000029;
+        background: #F8F9FD;
+    }
+    .row-url-salas{
+        background: #E8EBF3 0% 0% no-repeat padding-box;
+        padding: 30px 20px;
+    }
+    .copiar-link{
+        font: normal normal bold 12px/15px Lato;
+        letter-spacing: 0px;
+        color: #2A3E51;
+        padding-left: 5px;
+        margin-bottom: 0px;
+    }
+    .img-user{
+        width: 100%;
+    }
+    .p-url-salas{
+        font: normal normal bold 16px Lato;
+        letter-spacing: 0px;
+        color: #5D5E61;
+        padding-left: 5px;
+    }
+    .p-user-salas{
+        font: normal normal bold 16px Lato;
+        letter-spacing: 0px;
+        color: #5D5E61;
+    }
+    .card-user-salas{
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 2px 4px #00000029;
+        border-radius: 5px;
+        padding: 20px 20px;
+        margin: 20px 0px;
+    }
+    .p-users-num{
+        font: normal normal normal 16px/19px Lato;
+        letter-spacing: 0px;
+        color: #5D5E61;
+        margin-bottom: 0px;
+        padding-left: 5px;
+    }
+    .circulo-user{
+        width: 15px;
+        height: 15px;
+        background-color: blue;
+        border-radius: 100%;
+    }
+    .pad-b-15{
+        padding-bottom: 15px;
+    }
+    .row-historico-chamada{
+        padding: 30px 20px;
+        background: #F8F9FD;
+    }
+    .p-historico-mobile{
+        background: #0C84C2 0% 0% no-repeat padding-box;
+        font-size: 10px;
+        margin-bottom: 0px;
+        padding: 5px;
+        color: #ffffff;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+    .p-data-historico-sala{
+        font: normal normal normal 14px/24px Lato;
+        letter-spacing: 0px;
+        color: #8E9198;
+        margin-bottom: 0px;
+        padding-right: 5px;
+    }
+    .p-historico-user{
+        font: normal normal bold 14px/24px Lato;
+        letter-spacing: 0px;
+        color: #F7004C;
+        margin-bottom: 0px;
+        padding-right: 5px;
+    }
+    .p-desktop-historico{
+        background: #E8EBF3 0% 0% no-repeat padding-box;
+        border-radius: 4px;
+        font: normal normal bold 10px/12px Lato;
+        letter-spacing: 0px;
+        color: #0C84C2;
+        padding: 5px;
+        margin-bottom: 0px;
+        margin-right: 5px;
+    }
+    .row-voltar-da-sala{
+        padding: 30px 20px;
+    }
