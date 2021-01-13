@@ -660,3 +660,29 @@ body{
         letter-spacing: 0px;
         color: #5D5E61;
     }
+    .status-em-espera {
+        background: #FFAA00 0% 0% no-repeat padding-box;
+        border-radius: 6px;
+        padding: 15px 20px;
+    }
+    .em-espera-sala {
+        background: #E69900 0% 0% no-repeat padding-box;
+        border-radius: 6px;
+        padding: 6px;
+    }
+    .tempo-decorrido-sala-terminado{
+        background: #8E9198 0% 0% no-repeat padding-box;
+        border-radius: 6px;
+        margin-left: 25px;
+        padding: 20px 20px;
+    }
+    .status-ninguem-na-sala {
+        background: #8E9198 0% 0% no-repeat padding-box;
+        border-radius: 6px;
+        padding: 15px 20px;
+    }
+    .ninguem-na-sala-status{
+        background: #777A80 0% 0% no-repeat padding-box;
+        border-radius: 6px;
+        padding: 6px;
+    }
